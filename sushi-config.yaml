@@ -33,7 +33,7 @@ pages:
   index.md:
     title: Home
   usecase-french.md:
-    title: Cas d’application
+    title: Scénarios d’utilisation (cas d’application)
   profiles.md:
     title: Profiles
   extensions.md:
