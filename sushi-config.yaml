@@ -3,35 +3,37 @@
 
 # Package name
 # https://confluence.hl7.org/display/FHIR/NPM+Package+Specification#NPMPackageSpecification-Packagename
-id: ch.fhir.ig.ch-ig
-canonical: http://fhir.ch/ig/ch-ig
-name: CH_IG
-title: "CH IG (R4)"
-description: Implementation Guide CH IG (R4) for ...
+id: ch.hcisolutions.ig.ch-emed-pmp
+canonical: http://hcisolutions.ch/ig/ch-emed-pmp
+name: CH_EMED_PMP
+title: "CH EMED PMP (R4)"
+description: FHIR implementation guide to show the use case PMP (plan de médication partagé) and the differences to the Swiss exchange format CH EMED.
 status: draft
 license: CC-BY-SA-4.0
 copyright: CC-BY-SA-4.0
 jurisdiction: urn:iso:std:iso:3166#CHE
-date: 2021-12-03
+date: 2022-05-10
 version: 0.1.0
 fhirVersion: 4.0.1
-copyrightYear: 2021+
+copyrightYear: 2022+
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters -> Parameter: releaselabel
 releaseLabel: CI Build 
 publisher:
-  name: HL7 Switzerland
+  name: HCI Solutions AG
 contact:
-  name: HL7 Switzerland
+  name: HCI Solutions AG
   telecom:
     system: url
-    value: https://www.hl7.ch/
+    value: http://hcisolutions.ch
 
 dependencies:
-  ch.fhir.ig.ch-core: 2.0.0
+  ch.fhir.ig.ch-emed: 2.0.0
 
 pages:
   index.md:
     title: Home
+  usecase-french.md:
+    title: Cas d’application
   profiles.md:
     title: Profiles
   extensions.md:
@@ -41,6 +43,7 @@ pages:
 
 menu:
   Home: index.html
+  Use Case: usecase-french.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
@@ -48,8 +51,3 @@ menu:
 
 # Parameters
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-
-resources:
-  CodeSystem/ch-ig-example-translation:
-    name: CH IG Example Translation
-    exampleBoolean: false

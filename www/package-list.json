@@ -1,22 +1,22 @@
 {
-  "package-id": "ch.fhir.ig.ch-ig",
-  "title": "CH IG (R4)",
-  "introduction": "Implementation Guide CH IG (R4) for ...",
+  "package-id": "ch.hcisolutions.ig.ch-emed-pmp",
+  "title": "CH EMED PMP (R4)",
+  "introduction": "FHIR implementation guide to show the use case PMP (plan de médication partagé) and the differences to the Swiss exchange format CH EMED.",
   "category": "National Base",
-  "canonical": "http://fhir.ch/ig/ch-ig",
+  "canonical": "http://hcisolutions.ch/ig/ch-emed-pmp",
   "list": [
     {
       "version": "current",
       "desc": "Continuous Integration Build (latest in version control)",
-      "path": "http://build.fhir.org/ig/hl7ch/ch-ig",
+      "path": "http://build.fhir.org/ig/ahdis/ch-emed-pmp",
       "status": "ci-build",
       "current": true
     },
     {
       "version": "0.1.0",
-      "date": "2021-07-01",
-      "desc": "HL7 Switzerland STU 1",
-      "path": "http://fhir.ch/ig/ch-ig",
+      "date": "2022-05-10",
+      "desc": "HCI Solutions AG STU 1",
+      "path": "http://hcisolutions.ch/ig/ch-emed-pmp",
       "status": "trial-use",
       "sequence": "STU 1",
       "fhirversion": "4.0.1",
