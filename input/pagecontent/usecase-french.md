@@ -12,7 +12,7 @@ Le 12.02.2019, Mme Dupond se rend chez son médecin de famille, le Dr Rochat, po
 
 Il lui transmet la prescription du traitement habituel pour trois mois, et ajoute du:
 
-*Dafalgan cpr pell 1 g*, **1-1-1, dosage avancé**: en réserve, **raison**: douleurs 
+*Dafalgan cpr pell 1 g*, **1-1-1, dosage avancé**: en réserve, **raison**: douleurs ([MTP](Bundle-MTPDafalgan.html))
 
 *Voltaren dolo forte émulgel*, **1-1-1-1**, durant **7 jours**, **raison**: douleurs
 

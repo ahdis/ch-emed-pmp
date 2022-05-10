@@ -1,6 +1,6 @@
-Profile: PMP-Patient
+Profile: PmpPatient
 Parent: Patient
-Id: PMP-Patient
-Title: "PMP-Patient"
+Id: pmp-patient
+Title: "PMP Patient"
 Description: "Just as example"
 * name
