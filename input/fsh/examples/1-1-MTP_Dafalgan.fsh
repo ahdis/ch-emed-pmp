@@ -30,25 +30,25 @@ Title: "MTP Dafalgan Comp"
 Description: "Example for a composition (CH EMED Composition MTP)"
 * language = #fr-CH
 * extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"
-* extension.valueReference = Reference(Patient/MadameDupontInformationRecipient)
+* extension.valueReference = Reference(MadameDupontInformationRecipient)
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:abe8b488-ec08-4bd0-ab13-482456635a9f"
 * status = #final
 * type.coding[0] = $lnc#77603-9 "Medication treatment plan.extended"
 * type.coding[+] = $sct#419891008 "Record artifact (record artifact)"
-* subject = Reference(Patient/MadameDupont)
+* subject = Reference(MadameDupont)
 * date = "2019-02-19T11:00:00+01:00"
-* author = Reference(Practitioner/DoctorRochat)
+* author = Reference(DoctorRochat)
 * title = "Décision thérapeutique relative à la médication"
 * confidentiality = #N
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normally accessible"
-* custodian = Reference(Organization/GeneralPractitioner)
+* custodian = Reference(GeneralPractitioner)
 * section.title = "Plan de traitement médicamenteux"
 * section.code = $lnc#77604-7 "Medication treatment plan.brief"
 * section.text.status = #generated
 * section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Human readable text (generated)</div>"
-* section.entry = Reference(MedicationStatement/MedStatDafalgan)
+* section.entry = Reference(MedStatDafalgan)
 
 
 Instance: MedStatDafalgan
@@ -61,7 +61,7 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * identifier.value = "urn:uuid:ce620825-baf3-4c6c-813f-4c5ad9a85a55"
 * status = #completed
 * medicationReference = Reference(MedDafalgan)
-* subject = Reference(Patient/MadameDupont)
+* subject = Reference(MadameDupont)
 * reasonCode.text = "douleurs"
 * dosage[+].timing.repeat.when[+] = #MORN
 * dosage[=].timing.repeat.when[+] = #NOON
