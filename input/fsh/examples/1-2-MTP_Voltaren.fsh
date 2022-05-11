@@ -1,16 +1,16 @@
-// Dafalgan cpr pell 1 g, 1-1-1, dosage avancé: en réserve, raison: douleurs
+// Voltarène dolo forte émulgel, 1-1-1-1, durant 7 jours, raison: douleurs
 
-Instance: MTPDafalgan
+Instance: MTPVoltaren
 InstanceOf: $ChEmedBundleMTP
 Usage: #example
-Title: "MTP Dafalgan Bundle"
+Title: "MTP Voltaren Bundle"
 Description: "Example for a bundle (CH EMED Document MTP)"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:45c6b4d4-19e7-4ae9-9809-37ec009deaec"
+* identifier.value = "urn:uuid:b36a2374-1124-4a3f-bc60-7b93fc00c2df"
 * type = #document
 * timestamp = "2019-02-12T11:00:00+01:00"
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Composition/CompDafalgan"
-* entry[=].resource = CompDafalgan
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Composition/CompVoltaren"
+* entry[=].resource = CompVoltaren
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupont"
 * entry[=].resource = MadameDupont
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorRochat"
@@ -19,20 +19,20 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = GeneralPractitioner
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupontInformationRecipient"
 * entry[=].resource = MadameDupontInformationRecipient
-* entry[+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/MedStatDafalgan"
-* entry[=].resource = MedStatDafalgan
+* entry[+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/MedStatVoltaren"
+* entry[=].resource = MedStatVoltaren
 
 
-Instance: CompDafalgan
+Instance: CompVoltaren
 InstanceOf: $ChEmedCompMTP
 Usage: #example
-Title: "MTP Dafalgan Comp"
+Title: "MTP Voltaren Comp"
 Description: "Example for a composition (CH EMED Composition MTP)"
 * language = #fr-CH
 * extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"
 * extension.valueReference = Reference(Patient/MadameDupontInformationRecipient)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:abe8b488-ec08-4bd0-ab13-482456635a9f"
+* identifier.value = "urn:uuid:208866e7-23cd-46d1-868b-b502749719e4"
 * status = #final
 * type.coding[0] = $lnc#77603-9 "Medication treatment plan.extended"
 * type.coding[+] = $sct#419891008 "Record artifact (record artifact)"
@@ -48,38 +48,39 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section.code = $lnc#77604-7 "Medication treatment plan.brief"
 * section.text.status = #generated
 * section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Human readable text (generated)</div>"
-* section.entry = Reference(MedicationStatement/MedStatDafalgan)
+* section.entry = Reference(MedicationStatement/MedStatVoltaren)
 
 
-Instance: MedStatDafalgan
+Instance: MedStatVoltaren
 InstanceOf: $ChEmedMedStatMTP
 Usage: #example
-Title: "MTP Dafalgan MedStat"
+Title: "MTP Voltaren MedStat"
 Description: "Example for a medication statement (CH EMED MedicationStatement MTP)"
-* contained = MedDafalgan
+* contained = MedVoltaren
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:ce620825-baf3-4c6c-813f-4c5ad9a85a55"
+* identifier.value = "urn:uuid:d598e19a-4ffe-4f0d-bd55-a56c04f5ea87"
 * status = #completed
-* medicationReference = Reference(MedDafalgan)
+* medicationReference = Reference(MedVoltaren)
 * subject = Reference(Patient/MadameDupont)
 * reasonCode.text = "douleurs"
-* dosage[+].timing.repeat.when[+] = #MORN
+//* dosage[+].timing.repeat.boundsDuration = 7 'd' "day"
+* dosage[+].timing.repeat.boundsPeriod.start = "2019-02-12"
+* dosage[=].timing.repeat.boundsPeriod.end = "2019-02-18"
+* dosage[=].timing.repeat.when[+] = #MORN
 * dosage[=].timing.repeat.when[+] = #NOON
 * dosage[=].timing.repeat.when[+] = #EVE
-* dosage[=].asNeededBoolean = true
-* dosage[=].route = $edqm#20053000 "Oral use"
-* dosage[=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
+* dosage[=].timing.repeat.when[+] = #NIGHT
 
 
-Instance: MedDafalgan
+Instance: MedVoltaren
 InstanceOf: $ChEmedMed
 Usage: #inline
-* code = $gtin#7680563180079 "DAFALGAN cpr pell 1 g blister 40 pce"
-* code.text = "DAFALGAN cpr pell 1 g blister 40 pce"
-* form = $edqm#10221000 "Film-coated tablet"
-* amount.numerator = 40 '{Piece}' "Piece(s)"
-* amount.denominator = 1 '{Package}' "Package"
-* ingredient.itemCodeableConcept = $sct#387517004 "Paracetamol (substance)"
-* ingredient.itemCodeableConcept.text = "Paracétamol"
-* ingredient.strength.numerator = 1 'g' "gram"
-* ingredient.strength.denominator = 1 $sct#732936001 "Tablet (unit of presentation)"
+* code = $gtin#7680618590037 "VOLTAREN DOLO forte émulgel tube 120 g"
+* code.text = "VOLTAREN DOLO forte émulgel tube 120 g"
+* form = $edqm#10503000	"Gel"
+* amount.numerator = 120 'g' "gram"
+* amount.denominator = 1 $sct#733024003 "Tube"
+* ingredient.itemCodeableConcept = $sct#426714006 "Diclofenac diethylammonium (substance)"
+* ingredient.itemCodeableConcept.text = "Diclofenac diéthylamine"
+* ingredient.strength.numerator = 2.32 'g' "gram"
+* ingredient.strength.denominator = 100 'g' "gram"

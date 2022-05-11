@@ -12,9 +12,9 @@ Le 12.02.2019, Mme Dupond se rend chez son médecin de famille, le Dr Rochat, po
 
 Il lui transmet la prescription du traitement habituel pour trois mois, et ajoute du:
 
-*Dafalgan cpr pell 1 g*, **1-1-1, dosage avancé**: en réserve, **raison**: douleurs ([MTP](Bundle-MTPDafalgan.html))
+*Dafalgan cpr pell 1 g*, **1-1-1, dosage avancé**: en réserve, **raison**: douleurs ([MTP Dafalgan](Bundle-MTPDafalgan.html))
 
-*Voltaren dolo forte émulgel*, **1-1-1-1**, durant **7 jours**, **raison**: douleurs
+*Voltarène dolo forte émulgel*, **1-1-1-1**, durant **7 jours**, **raison**: douleurs ([MTP Voltaren](Bundle-MTPVoltaren.html))
 
 *Temesta Expidet cpr orodisp 1 mg*, **0-0-0-1**, durant **3 jours**, **raison**: pour dormir   
 **instruction au patient**: laisser fondre 1 comprimé sous la langue ½ heure avant le coucher   
