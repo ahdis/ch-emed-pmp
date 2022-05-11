@@ -47,7 +47,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section.title = "Plan de traitement médicamenteux"
 * section.code = $lnc#77604-7 "Medication treatment plan.brief"
 * section.text.status = #generated
-* section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Human readable text (generated)</div>"
+* section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dafalgan cpr pell 1 g, 1-1-1, dosage avancé: en réserve, raison: douleurs</div>"
 * section.entry = Reference(MedStatDafalgan)
 
 
