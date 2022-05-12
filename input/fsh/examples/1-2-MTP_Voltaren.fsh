@@ -65,7 +65,7 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * reasonCode.text = "douleurs"
 //* dosage[+].timing.repeat.boundsDuration = 7 'd' "day"
 * dosage[+].timing.repeat.boundsPeriod.start = "2019-02-12"
-* dosage[=].timing.repeat.boundsPeriod.end = "2019-02-18"
+* dosage[=].timing.repeat.boundsPeriod.end = "2019-02-19"
 * dosage[=].timing.repeat.when[+] = #MORN
 * dosage[=].timing.repeat.when[+] = #NOON
 * dosage[=].timing.repeat.when[+] = #EVE

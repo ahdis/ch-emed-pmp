@@ -73,7 +73,7 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * reasonCode.text = "pour dormir"
 * note.text = "laisser fondre 1 comprimé sous la langue ½ heure avant le coucher"
 * dosage[+].timing.repeat.boundsPeriod.start = "2019-02-12"
-* dosage[=].timing.repeat.boundsPeriod.end = "2019-02-14"
+* dosage[=].timing.repeat.boundsPeriod.end = "2019-02-15"
 * dosage[=].timing.repeat.when[+] = #NIGHT
 * dosage[=].route = $edqm#20053000 "Oral use"
 * dosage[=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
