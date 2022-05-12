@@ -1,6 +1,6 @@
 // Dafalgan cpr pell 1 g, 1-1-1, dosage avancé: en réserve, raison: douleurs
 
-Instance: MTPDafalgan
+Instance: 1-1-MTPDafalgan
 InstanceOf: $ChEmedBundleMTP
 Usage: #example
 Title: "MTP Dafalgan Bundle"
@@ -9,8 +9,12 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * identifier.value = "urn:uuid:45c6b4d4-19e7-4ae9-9809-37ec009deaec"
 * type = #document
 * timestamp = "2019-02-12T11:00:00+01:00"
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Composition/CompDafalgan"
-* entry[=].resource = CompDafalgan
+
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Composition/1-1-CompDafalgan"
+* entry[=].resource = 1-1-CompDafalgan
+* entry[+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/1-1-MedStatDafalgan"
+* entry[=].resource = 1-1-MedStatDafalgan
+
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupont"
 * entry[=].resource = MadameDupont
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorRochat"
@@ -19,11 +23,9 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = GeneralPractitioner
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupontInformationRecipient"
 * entry[=].resource = MadameDupontInformationRecipient
-* entry[+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/MedStatDafalgan"
-* entry[=].resource = MedStatDafalgan
 
 
-Instance: CompDafalgan
+Instance: 1-1-CompDafalgan
 InstanceOf: $ChEmedCompMTP
 Usage: #example
 Title: "MTP Dafalgan Comp"
@@ -32,26 +34,27 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"
 * extension.valueReference = Reference(MadameDupontInformationRecipient)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:abe8b488-ec08-4bd0-ab13-482456635a9f"
+* identifier.value = "urn:uuid:45c6b4d4-19e7-4ae9-9809-37ec009deaec"
 * status = #final
 * type.coding[0] = $lnc#77603-9 "Medication treatment plan.extended"
 * type.coding[+] = $sct#419891008 "Record artifact (record artifact)"
 * subject = Reference(MadameDupont)
-* date = "2019-02-19T11:00:00+01:00"
+* date = "2019-02-12T11:00:00+01:00"
 * author = Reference(DoctorRochat)
 * title = "Décision thérapeutique relative à la médication"
 * confidentiality = #N
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normally accessible"
 * custodian = Reference(GeneralPractitioner)
+
 * section.title = "Plan de traitement médicamenteux"
 * section.code = $lnc#77604-7 "Medication treatment plan.brief"
 * section.text.status = #generated
 * section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dafalgan cpr pell 1 g, 1-1-1, dosage avancé: en réserve, raison: douleurs</div>"
-* section.entry = Reference(MedStatDafalgan)
+* section.entry = Reference(1-1-MedStatDafalgan)
 
 
-Instance: MedStatDafalgan
+Instance: 1-1-MedStatDafalgan
 InstanceOf: $ChEmedMedStatMTP
 Usage: #example
 Title: "MTP Dafalgan MedStat"

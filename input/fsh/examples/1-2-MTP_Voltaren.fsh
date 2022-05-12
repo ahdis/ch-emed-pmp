@@ -1,6 +1,6 @@
 // Voltarène dolo forte émulgel, 1-1-1-1, durant 7 jours, raison: douleurs
 
-Instance: MTPVoltaren
+Instance: 1-2-MTPVoltaren
 InstanceOf: $ChEmedBundleMTP
 Usage: #example
 Title: "MTP Voltaren Bundle"
@@ -9,8 +9,12 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * identifier.value = "urn:uuid:b36a2374-1124-4a3f-bc60-7b93fc00c2df"
 * type = #document
 * timestamp = "2019-02-12T11:00:00+01:00"
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Composition/CompVoltaren"
-* entry[=].resource = CompVoltaren
+
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Composition/1-2-CompVoltaren"
+* entry[=].resource = 1-2-CompVoltaren
+* entry[+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/1-2-MedStatVoltaren"
+* entry[=].resource = 1-2-MedStatVoltaren
+
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupont"
 * entry[=].resource = MadameDupont
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorRochat"
@@ -19,11 +23,10 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = GeneralPractitioner
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupontInformationRecipient"
 * entry[=].resource = MadameDupontInformationRecipient
-* entry[+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/MedStatVoltaren"
-* entry[=].resource = MedStatVoltaren
 
 
-Instance: CompVoltaren
+
+Instance: 1-2-CompVoltaren
 InstanceOf: $ChEmedCompMTP
 Usage: #example
 Title: "MTP Voltaren Comp"
@@ -32,26 +35,27 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"
 * extension.valueReference = Reference(MadameDupontInformationRecipient)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:208866e7-23cd-46d1-868b-b502749719e4"
+* identifier.value = "urn:uuid:b36a2374-1124-4a3f-bc60-7b93fc00c2df"
 * status = #final
 * type.coding[0] = $lnc#77603-9 "Medication treatment plan.extended"
 * type.coding[+] = $sct#419891008 "Record artifact (record artifact)"
 * subject = Reference(MadameDupont)
-* date = "2019-02-19T11:00:00+01:00"
+* date = "2019-02-12T11:00:00+01:00"
 * author = Reference(DoctorRochat)
 * title = "Décision thérapeutique relative à la médication"
 * confidentiality = #N
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normally accessible"
 * custodian = Reference(GeneralPractitioner)
+
 * section.title = "Plan de traitement médicamenteux"
 * section.code = $lnc#77604-7 "Medication treatment plan.brief"
 * section.text.status = #generated
 * section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Voltarène dolo forte émulgel, 1-1-1-1, durant 7 jours, raison: douleurs</div>"
-* section.entry = Reference(MedStatVoltaren)
+* section.entry = Reference(1-2-MedStatVoltaren)
 
 
-Instance: MedStatVoltaren
+Instance: 1-2-MedStatVoltaren
 InstanceOf: $ChEmedMedStatMTP
 Usage: #example
 Title: "MTP Voltaren MedStat"
