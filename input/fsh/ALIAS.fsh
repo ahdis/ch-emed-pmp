@@ -12,8 +12,11 @@ Alias: $ChCoreOrganizationEpr =             http://fhir.ch/ig/ch-core/StructureD
 Alias: $ChEmedPractitioner =                http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner
 
 Alias: $ChEmedBundleMTP =                   http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationtreatmentplan
+Alias: $ChEmedBundlePADV =                  http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-pharmaceuticaladvice
 
 Alias: $ChEmedCompMTP =                     http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationtreatmentplan
+Alias: $ChEmedCompPADV =                    http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-pharmaceuticaladvice
 
 Alias: $ChEmedMed =                         http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication
 Alias: $ChEmedMedStatMTP =                  http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan
+Alias: $ChEmedObs =                         http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation

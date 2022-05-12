@@ -12,13 +12,13 @@ Le 12.02.2019, Mme Dupond se rend chez son médecin de famille, le Dr Rochat, po
 
 Il lui transmet la prescription du traitement habituel pour trois mois, et ajoute du:
 
-*Dafalgan cpr pell 1 g*, **1-1-1, dosage avancé**: en réserve, **raison**: douleurs ([MTP Dafalgan](Bundle-MTPDafalgan.html))
+*Dafalgan cpr pell 1 g*, **1-1-1, dosage avancé**: en réserve, **raison**: douleurs ([MTP Dafalgan](Bundle-1-1-MTPDafalgan.html))
 
-*Voltarène dolo forte émulgel*, **1-1-1-1**, durant **7 jours**, **raison**: douleurs ([MTP Voltaren](Bundle-MTPVoltaren.html))
+*Voltarène dolo forte émulgel*, **1-1-1-1**, durant **7 jours**, **raison**: douleurs ([MTP Voltaren](Bundle-1-2-MTPVoltaren.html))
 
 *Temesta Expidet cpr orodisp 1 mg*, **0-0-0-1**, durant **3 jours**, **raison**: pour dormir   
 **instruction au patient**: laisser fondre 1 comprimé sous la langue ½ heure avant le coucher   
-**+ insérer un commentaire**: si aucune amélioration au bout de 3 jours, reprendre contact avec le médecin ([MTP Temesta](Bundle-MTPTemesta.html))
+**+ insérer un commentaire**: si aucune amélioration au bout de 3 jours, reprendre contact avec le médecin ([MTP Temesta](Bundle-1-3-MTPTemesta.html))
 
 Son PML (timeline) indique:
 
@@ -59,11 +59,11 @@ Après 3 jours, le 15.02.2019 elle se rend à la pharmacie, elle informe cette d
 
 et voit le commentaire sous le Temesta: si aucune amélioration au bout de 3 jours, reprendre contact avec le médecin. La pharmacie prend contact téléphoniquement avec le médecin et ce dernier indique que le Temesta doit être stoppé.
 
-*Temesta Expidet cpr orodisp 1 mg*, **arrêter la médication**, **commentaire**: selon téléphone avec le médecin, arrêter le traitement car inefficace. 
+*Temesta Expidet cpr orodisp 1 mg*, **arrêter la médication**, **commentaire**: selon téléphone avec le médecin, arrêter le traitement car inefficace ([PADV Temesta](Bundle-2-1-PADVTemesta.html))  
 
 Mme Dupont indique aussi à la pharmacie qu’elle n’a pas pris de Dafalgan car les douleurs se sont atténuées grâce au Voltarène émulgel. La pharmacie saisit un commentaire sur la ligne du Dafalgan et elle continue avec le Voltarène jusqu’à la date prévue.
 
-*Dafalgan cpr pell 1 g*, **créer un commentaire**: la patiente n’a pas pris le médicament car pas nécessaire, le Voltarène émulgel a fait son effet.
+*Dafalgan cpr pell 1 g*, **créer un commentaire**: la patiente n’a pas pris le médicament car pas nécessaire, le Voltarène émulgel a fait son effet
 
 La pharmacie donne un nouveau médicament contre les insomnies, avec une posologie spéciale à adapter suivant le résultat.
 
