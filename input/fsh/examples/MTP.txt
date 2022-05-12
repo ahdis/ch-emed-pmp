@@ -46,11 +46,17 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normally accessible"
 * custodian = Reference(GeneralPractitioner)
+
 * section.title = "Plan de traitement médicamenteux"
 * section.code = $lnc#77604-7 "Medication treatment plan.brief"
 * section.text.status = #generated
 * section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Human readable text (generated)</div>"
 * section.entry = Reference(MedStatDafalgan)
+
+* section[+].title = "Commentaire"
+* section[=].code = $lnc#48767-8 "Annotation comment"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Commentaire</div>"
 
 
 Instance: MedStatDafalgan

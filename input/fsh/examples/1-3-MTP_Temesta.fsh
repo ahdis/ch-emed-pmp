@@ -48,11 +48,15 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normally accessible"
 * custodian = Reference(GeneralPractitioner)
-* section.title = "Plan de traitement médicamenteux"
-* section.code = $lnc#77604-7 "Medication treatment plan.brief"
-* section.text.status = #generated
-* section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Temesta Expidet cpr orodisp 1 mg, 0-0-0-1, durant 3 jours, raison: pour dormir</div>"
-* section.entry = Reference(MedStatTemesta)
+* section[+].title = "Plan de traitement médicamenteux"
+* section[=].code = $lnc#77604-7 "Medication treatment plan.brief"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Temesta Expidet cpr orodisp 1 mg, 0-0-0-1, durant 3 jours, raison: pour dormir</div>"
+* section[=].entry = Reference(MedStatTemesta)
+* section[+].title = "Commentaire"
+* section[=].code = $lnc#48767-8 "Annotation comment"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">si aucune amélioration au bout de 3 jours, reprendre contact avec le médecin</div>"
 
 
 Instance: MedStatTemesta
@@ -67,8 +71,7 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedTemesta)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "pour dormir"
-* note.text = "si aucune amélioration au bout de 3 jours, reprendre contact avec le médecin"
-* dosage[+].text = "laisser fondre 1 comprimé sous la langue ½ heure avant le coucher"
+* note.text = "laisser fondre 1 comprimé sous la langue ½ heure avant le coucher"
 * dosage[+].timing.repeat.boundsPeriod.start = "2019-02-12"
 * dosage[=].timing.repeat.boundsPeriod.end = "2019-02-14"
 * dosage[=].timing.repeat.when[+] = #NIGHT
