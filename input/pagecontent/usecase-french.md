@@ -67,7 +67,7 @@ Mme Dupont indique aussi à la pharmacie qu’elle n’a pas pris de Dafalgan ca
 
 La pharmacie donne un nouveau médicament contre les insomnies, avec une posologie spéciale à adapter suivant le résultat.
 
-*SIMILASAN Troubles du sommeil gouttes*, **dosage spécial**: prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher. **Raison**: insomnies
+* *SIMILASAN Troubles du sommeil gouttes*, **dosage spécial**: prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher. **Raison**: insomnies ([MTP Similasan](Bundle-2-3-MTPSimilasan.html))
 
 Son PML (timeline) indique:
 
@@ -78,10 +78,10 @@ Son PML (timeline) indique:
 | Dafalgan cpr pell 1 g | 1-1-1 | En réserve | Commentaire 15.02.2019: la patiente n’a pas pris de Dafalgan car les douleurs se sont atténuées grâce au Voltarène dolo forte émulgel | 
 | Voltarène dolo forte émulgel | 1-1-1-1 | Durant 7 jours |  | 
 | Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 3 jours + instruction au patient + commentaire | Changements: stoppé le 15.02.2019 / Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace. | 
-| SIMILASAN Troubles du sommeil gouttes |  | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher | 
+| SIMILASAN Troubles du sommeil gouttes |  | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher. | 
 
 <span style="background-color:turquoise">Au niveau des transactions depuis le SI de la pharmacie</span>   
-<span style="background-color:turquoise">Import PML: 2 x PADV 1 x MTP</span>
+<span style="background-color:turquoise">Import PML: 2 x PADV, 1 x MTP</span>
 
 Après ces modifications la pharmacie transmet un nouveau plan de médication qui contient :
 
@@ -145,7 +145,7 @@ Son PML (timeline) indique:
 | Cetirizine Mepha Lactab 10 mg | 0-0-1 |  | Changement: changement de posologie le 28.02.2019 / Commentaire : pas de réaction significative avec le traitement 1 x jour. -> 2 x/j. | 
 | Cetirizine Mepha Lactab 10 mg | 1-0-1 | Durant 3 jours | 
 
-<span style="background-color:turquoise">Import PML: 1 x PADV 1 x MTP</span>   
+<span style="background-color:turquoise">Import PML: 1 x PADV, 1 x MTP</span>   
 
 Après son séjour à l’hôpital le 01.03.2019, Mme Dupont reçoit le traitement suivant:
 
@@ -171,7 +171,7 @@ Son PML (timeline) indique:
 | Hydrocortisone Galepharm cpr 10 mg | 0.5-0-0.5 | En réserve | Instruction au patient: en cas de crise de prurit | 
 
 <span style="background-color:turquoise">Au niveau des transactions depuis le SI de l’hôpital</span>   
-<span style="background-color:turquoise">Import PML: 1 x PADV 3 x MTP</span>   
+<span style="background-color:turquoise">Import PML: 1 x PADV, 3 x MTP</span>   
 
 Après ces modifications la pharmacie transmet un nouveau plan de médication qui contient:
 

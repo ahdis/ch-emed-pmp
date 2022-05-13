@@ -39,7 +39,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * type.coding[0] = $lnc#77603-9 "Medication treatment plan.extended"
 * type.coding[+] = $sct#419891008 "Record artifact (record artifact)"
 * subject = Reference(MadameDupont)
-* date = "2019-02-19T11:00:00+01:00"
+* date = "2019-02-12T11:00:00+01:00"
 * author = Reference(DoctorRochat)
 * title = "Décision thérapeutique relative à la médication"
 * confidentiality = #N
