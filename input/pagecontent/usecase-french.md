@@ -1,7 +1,30 @@
-Description use case 4 (<span style="background-color:turquoise">MTP</span>) - Ajouter un traitement - Ajouter -> un médicament avec toutes les possibilités   
-Description use case 5 (<span style="background-color:turquoise">PADV</span>) - changements - arrêt, changement de posologie, commentaire
+### Ajouter un traitement et changements
+* Description use case 4 (<span style="background-color:turquoise">MTP</span>) - **Ajouter un traitement** - ajouter -> un médicament avec toutes les possibilités   
+* Description use case 5 (<span style="background-color:turquoise">PADV</span>) - **Changements** - arrêt, changement de posologie, commentaire
 
-### Chez le médecin
+Aperçu sous forme de tableau des scénarios d'utilisation suivants:
+
+{:class="table table-bordered"}
+| Lieu du traitement | Date | Activité/décision | Document |
+| --- | --- | --- | --- |
+| [Chez le médecin](usecase-french.html#chez-le-médecin) | 12.02.2019 | Ajouter un médicament | [MTP Dafalgan](Bundle-1-1-MTPDafalgan.html) |
+| [Chez le médecin](usecase-french.html#chez-le-médecin) | 12.02.2019 | Ajouter un médicament | [MTP Voltaren](Bundle-1-2-MTPVoltaren.html) |
+| [Chez le médecin](usecase-french.html#chez-le-médecin) | 12.02.2019 | Ajouter un médicament | [MTP Temesta](Bundle-1-3-MTPTemesta.html) |
+| Au niveau des transactions depuis le SI du médecin | 12.02.2019 | <span style="background-color:turquoise">Import PML: 3 x MTP</span> | |
+| [À la pharmacie](usecase-french.html#à-la-pharmacie) | 15.02.2019 | Arrêter le médicament | [PADV Temesta](Bundle-2-1-PADVTemesta.html) |
+| [À la pharmacie](usecase-french.html#à-la-pharmacie) | 15.02.2019 | Ajouter un commentaire | [PADV Dafalgan](Bundle-2-2-PADVDafalgan.html) |
+| [À la pharmacie](usecase-french.html#à-la-pharmacie) | 15.02.2019 | Ajouter un médicament | [MTP Similasan](Bundle-2-3-MTPSimilasan.html) |
+| Au niveau des transactions depuis le SI de la pharmacie | 15.02.2019 | <span style="background-color:turquoise">Import PML: 2 x PADV, 1 x MTP</span> | |
+| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | 27.02.2019 | Ajouter un médicament | [MTP Cetirizine](Bundle-3-1-MTPCetirizine.html) |
+| | 27.02.2019 | <span style="background-color:turquoise">Import PML: 1 x MTP</span> | |
+| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | 28.02.2019 | Changement de posologie | [PADV Cetirizine](Bundle-3-2-PADVCetirizine.html), [MTP Cetirizine](Bundle-3-3-MTPCetirizine.html) |
+| | 28.02.2019 | <span style="background-color:turquoise">Import PML: 1 x PADV, 1 x MTP</span> | |
+| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | 01.03.2019 | Ajouter un médicament | [MTP Dermed](Bundle-3-4-MTPDermed.html) |
+| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | 01.03.2019 | Ajouter un médicament | [MTP Excipial](Bundle-3-5-MTPExcipial.html) |
+| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | 01.03.2019 | Ajouter un médicament | [MTP Hydrocortisone](Bundle-3-6-MTPHydrocortisone.html) |
+| Au niveau des transactions depuis le SI de l’hôpital | 01.03.2019 | <span style="background-color:turquoise">Import PML: 1 x PADV, 3 x MTP</span> | |
+
+#### Chez le médecin
 
 Le 12.02.2019, Mme Dupond se rend chez son médecin de famille, le Dr Rochat, pour un rendez-vous de routine. Lors de l’anamnèse, il consulte son plan de médication actuel, qui indique:
 
@@ -45,7 +68,7 @@ Il lui transmet également le plan de médication mis à jour qui contient:
 | <span style="background-color:yellow">Temesta Expidet cpr orodisp 1 mg</span> | <span style="background-color:yellow">0-0-0-1</span> | <span style="background-color:yellow">Durant 3 jours (15.02.2019) + instruction au patient + commentaire</span> | 
 
 
-### À la pharmacie
+#### À la pharmacie
 
 Après 3 jours, le 15.02.2019 elle se rend à la pharmacie, elle informe cette dernière que le Temesta ne l’aide pas à dormir. La pharmacie consulte le traitement de la patiente PML (timeline):
 
@@ -83,7 +106,7 @@ Son PML (timeline) indique:
 <span style="background-color:turquoise">Au niveau des transactions depuis le SI de la pharmacie</span>   
 <span style="background-color:turquoise">Import PML: 2 x PADV, 1 x MTP</span>
 
-Après ces modifications la pharmacie transmet un nouveau plan de médication qui contient :
+Après ces modifications la pharmacie transmet un nouveau plan de médication qui contient:
 
 {:class="table table-bordered"}
 | <span style="background-color:yellow">Reniten cpr 20 mg</span> | <span style="background-color:yellow">1-0-0</span> |  | 
@@ -94,7 +117,7 @@ Après ces modifications la pharmacie transmet un nouveau plan de médication qu
 | <span style="background-color:yellow">SIMILASAN Troubles du sommeil gouttes</span> | <span style="background-color:yellow">Dosage spécial</span> | <span style="background-color:yellow">Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher</span> | 
 
 
-### À la sortie de l’hôpital
+#### À la sortie de l’hôpital
 
 2 semaines plus tard, le 27.02.2019 Madame Dupont se rend aux urgences à cause d’un prurit insupportable (nuit), au CHUV où ils décident de l’hospitaliser. 
 
@@ -123,7 +146,7 @@ Son PML (timeline) indique:
 | Aspirine Cardio cpr pell 100 mg | 1-0-0 |  |  | 	
 | Dafalgan cpr pell 1 g | 1-1-1 | En réserve | Commentaire: la patiente n’a pas pris de Dafalgan car les douleurs se sont atténuées grâce au Voltarène dolo forte émulgel | 
 | Voltarène dolo forte émulgel | 1-1-1-1 | Durant 7 jours | Terminé le 19.02.2019 | 
-| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 3 jours + instruction au patient + commentaire | Changements : stoppé le 15.02.2019 / Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace. | 
+| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 3 jours + instruction au patient + commentaire | Changements: stoppé le 15.02.2019 / Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace. | 
 | SIMILASAN Troubles du sommeil gouttes |  | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher | 
 | Cetirizine Mepha Lactab 10 mg | 0-0-1 | Durant 3 jours |  | 
  
@@ -143,18 +166,19 @@ Son PML (timeline) indique:
 | Voltarène dolo forte émulgel | 1-1-1-1 | Durant 7 jours | Terminé le 19.02.2019 | 
 | Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 3 jours + instruction au patient + commentaire | Changements: stoppé le 15.02.2019 / Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace.  | 
 | SIMILASAN Troubles du sommeil gouttes |  | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher  | 
-| Cetirizine Mepha Lactab 10 mg | 0-0-1 |  | Changement: changement de posologie le 28.02.2019 / Commentaire : pas de réaction significative avec le traitement 1 x jour. -> 2 x/j. | 
+| Cetirizine Mepha Lactab 10 mg | 0-0-1 |  | Changement: changement de posologie le 28.02.2019 / Commentaire: pas de réaction significative avec le traitement 1 x jour. -> 2 x/j. | 
 | Cetirizine Mepha Lactab 10 mg | 1-0-1 | Durant 3 jours | 
 
 <span style="background-color:turquoise">Import PML: 1 x PADV, 1 x MTP</span>   
 
 Après son séjour à l’hôpital le 01.03.2019, Mme Dupont reçoit le traitement suivant:
 
-*DER-MED lotion lavante pH5.5*, **raison**: peau sensible, **instruction au patient**: pour se laver
+* *DER-MED lotion lavante pH5.5*, **raison**: peau sensible, **instruction au patient**: pour se laver ([MTP Dermed](Bundle-3-4-MTPDermed.html))
 
-*Excipial U Lipolotion Fl*, **raison**: peau sensible, **instruction au patient**: appliquer aussi souvent que nécessaire, **date de fin inconnue** 
+* *Excipial U Lipolotion Fl*, **raison**: peau sensible, **instruction au patient**: appliquer aussi souvent que nécessaire, **date de fin inconnue** ([MTP Excipial](Bundle-3-5-MTPExcipial.html))
 
-*Hydrocortisone Galepharm cpr 10 mg*, **0.5-0-0.5**, **en réserve**, **raison**: prurit, **instruction au patient**: en cas de crise de prurit   
+* *Hydrocortisone Galepharm cpr 10 mg*, **0.5-0-0.5**, **en réserve**, **raison**: prurit, **instruction au patient**: en cas de crise de prurit ([MTP Hydrocortisone](Bundle-3-6-MTPHydrocortisone.html))
+
 Son PML (timeline) indique:
 
 {:class="table table-bordered"}
@@ -163,9 +187,9 @@ Son PML (timeline) indique:
 | Aspirine Cardio cpr pell 100 mg | 1-0-0 |  |  | 	
 | Dafalgan cpr pell 1 g | 1-1-1 | En réserve | Commentaire: la patiente n’a pas pris de Dafalgan car les douleurs se sont atténuées grâce au Voltarène dolo forte émulgel | 
 | Voltarène dolo forte émulgel | 1-1-1-1 | Durant 7 jours | Terminé le 19.02.2019 | 
-| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 3 jours + instruction au patient + commentaire | Changements: stoppé le 15.02.2019 / Commentaire : selon téléphone avec le médecin, arrêter le traitement car inefficace. | 
+| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 3 jours + instruction au patient + commentaire | Changements: stoppé le 15.02.2019 / Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace. | 
 | SIMILASAN Troubles du sommeil gouttes |  | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher | 
-| Cetirizine Mepha Lactab 10 mg | 0-0-1 |  | Changement: changement de posologie le 28.02.2019 / Commentaire : pas de réaction significative avec le traitement 1 x jour. -> 2 x/j. | 
+| Cetirizine Mepha Lactab 10 mg | 0-0-1 |  | Changement: changement de posologie le 28.02.2019 / Commentaire: pas de réaction significative avec le traitement 1 x jour. -> 2 x/j. | 
 | Cetirizine Mepha Lactab 10 mg | 1-0-1 | Durant 3 jours |  | 
 | DER-MED lotion lavante pH5.5 |  |  | Instruction au patient: pour se laver | 
 | Excipial U Lipolotion Fl |  | Date de fin inconnue | Instruction au patient: appliquer aussi souvent que nécessaire | 
