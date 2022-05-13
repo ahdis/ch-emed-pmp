@@ -24,3 +24,17 @@ Description: "Example for an organization (CH Core Organization EPR)"
 * address.city = "Zürich"
 * address.postalCode = "8005"
 * address.country = "CH"
+
+
+Instance: Hospital
+InstanceOf: $ChCoreOrganizationEpr
+Usage: #example
+Title: "Hôpital"
+Description: "Example for an organization (CH Core Organization EPR)"
+* identifier.system = "urn:oid:2.51.1.3"
+* identifier.value = "7601000234321"
+* name = "Hôpital"
+* address.line = "Spitalgasse 4"
+* address.city = "Zürich"
+* address.postalCode = "8005"
+* address.country = "CH"

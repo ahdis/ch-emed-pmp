@@ -113,7 +113,7 @@ L’hôpital décide de donner de la Cetirizine Mepha Lactab 10 mg le soir pour 
 
 Ajouter -> un médicament
 
-Cetirizine Mepha Lactab 10 mg, **0-0-1**, durant **3 jours**, **raison**: allergie 
+* Cetirizine Mepha Lactab 10 mg, **0-0-1**, durant **3 jours**, **raison**: allergie ([MTP Cetirizine](Bundle-3-1-MTPCetirizine.html))
 
 Son PML (timeline) indique:
 
@@ -128,6 +128,7 @@ Son PML (timeline) indique:
 | Cetirizine Mepha Lactab 10 mg | 0-0-1 | Durant 3 jours |  | 
  
 <span style="background-color:turquoise">Import PML: 1 x MTP</span>   
+
 Le lendemain matin le 28.02.2019, la patiente ne réagissant pas assez rapidement au traitement, l’hôpital décide de changer la posologie.
 
 *Cetirizine Mepha Lactab 10 mg*, **changement de posologie**, **1-0-1**, **commentaire**: pas de réaction significative avec le traitement 1 x jour. -> 2x/j.
