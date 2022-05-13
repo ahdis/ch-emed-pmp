@@ -5,27 +5,27 @@
 Aperçu sous forme de tableau des scénarios d'utilisation suivants:
 
 {:class="table table-bordered"}
-| Lieu du traitement | Date | Activité/décision | Document |
-| --- | --- | --- | --- |
-| [Chez le médecin](usecase-french.html#chez-le-médecin) | 12.02.2019 | Ajouter un médicament | [MTP Dafalgan](Bundle-1-1-MTPDafalgan.html) |
-| [Chez le médecin](usecase-french.html#chez-le-médecin) | 12.02.2019 | Ajouter un médicament | [MTP Voltaren](Bundle-1-2-MTPVoltaren.html) |
-| [Chez le médecin](usecase-french.html#chez-le-médecin) | 12.02.2019 | Ajouter un médicament | [MTP Temesta](Bundle-1-3-MTPTemesta.html) |
-| Au niveau des transactions depuis le SI du médecin | 12.02.2019 | <span style="background-color:turquoise">Import PML: 3 x MTP</span> | |
-| [À la pharmacie](usecase-french.html#à-la-pharmacie) | 15.02.2019 | Arrêter le médicament | [PADV Temesta](Bundle-2-1-PADVTemesta.html) |
-| [À la pharmacie](usecase-french.html#à-la-pharmacie) | 15.02.2019 | Ajouter un commentaire | [PADV Dafalgan](Bundle-2-2-PADVDafalgan.html) |
-| [À la pharmacie](usecase-french.html#à-la-pharmacie) | 15.02.2019 | Ajouter un médicament | [MTP Similasan](Bundle-2-3-MTPSimilasan.html) |
-| Au niveau des transactions depuis le SI de la pharmacie | 15.02.2019 | <span style="background-color:turquoise">Import PML: 2 x PADV, 1 x MTP</span> | |
-| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | 27.02.2019 | Ajouter un médicament | [MTP Cetirizine](Bundle-3-1-MTPCetirizine.html) |
-| | 27.02.2019 | <span style="background-color:turquoise">Import PML: 1 x MTP</span> | |
-| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | 28.02.2019 | Changement de posologie | [PADV Cetirizine](Bundle-3-2-PADVCetirizine.html), [MTP Cetirizine](Bundle-3-3-MTPCetirizine.html) |
-| | 28.02.2019 | <span style="background-color:turquoise">Import PML: 1 x PADV, 1 x MTP</span> | |
-| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | 01.03.2019 | Ajouter un médicament | [MTP Dermed](Bundle-3-4-MTPDermed.html) |
-| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | 01.03.2019 | Ajouter un médicament | [MTP Excipial](Bundle-3-5-MTPExcipial.html) |
-| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | 01.03.2019 | Ajouter un médicament | [MTP Hydrocortisone](Bundle-3-6-MTPHydrocortisone.html) |
-| Au niveau des transactions depuis le SI de l’hôpital | 01.03.2019 | <span style="background-color:turquoise">Import PML: 1 x PADV, 3 x MTP</span> | |
+| Lieu du traitement | Date | Activité/décision | Document | PML | Plan de médication |
+| --- | --- | --- | --- | --- | --- |
+| [Chez le médecin](usecase-french.html#chez-le-médecin) | [12.02.2019](usecase-french.html#12022019) | Ajouter un médicament | [MTP Dafalgan](Bundle-1-1-MTPDafalgan.html) |
+| [Chez le médecin](usecase-french.html#chez-le-médecin) | [12.02.2019](usecase-french.html#12022019) | Ajouter un médicament | [MTP Voltaren](Bundle-1-2-MTPVoltaren.html) |
+| [Chez le médecin](usecase-french.html#chez-le-médecin) | [12.02.2019](usecase-french.html#12022019) | Ajouter un médicament | [MTP Temesta](Bundle-1-3-MTPTemesta.html) |
+| Au niveau des transactions depuis le SI du médecin | [12.02.2019](usecase-french.html#12022019) | <span style="background-color:turquoise">Import PML: 3 x MTP</span> | |
+| [À la pharmacie](usecase-french.html#à-la-pharmacie) | [15.02.2019](usecase-french.html#15022019) | Arrêter le médicament | [PADV Temesta](Bundle-2-1-PADVTemesta.html) |
+| [À la pharmacie](usecase-french.html#à-la-pharmacie) | [15.02.2019](usecase-french.html#15022019) | Ajouter un commentaire | [PADV Dafalgan](Bundle-2-2-PADVDafalgan.html) |
+| [À la pharmacie](usecase-french.html#à-la-pharmacie) | [15.02.2019](usecase-french.html#15022019) | Ajouter un médicament | [MTP Similasan](Bundle-2-3-MTPSimilasan.html) |
+| Au niveau des transactions depuis le SI de la pharmacie | [15.02.2019](usecase-french.html#15022019) | <span style="background-color:turquoise">Import PML: 2 x PADV, 1 x MTP</span> | |
+| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | [27.02.2019](usecase-french.html#27022019) | Ajouter un médicament | [MTP Cetirizine](Bundle-3-1-MTPCetirizine.html) |
+| | [27.02.2019](usecase-french.html#27022019) | <span style="background-color:turquoise">Import PML: 1 x MTP</span> | |
+| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | [28.02.2019](usecase-french.html#28022019) | Changement de posologie | [PADV Cetirizine](Bundle-3-2-PADVCetirizine.html), [MTP Cetirizine](Bundle-3-3-MTPCetirizine.html) |
+| | [28.02.2019](usecase-french.html#28022019) | <span style="background-color:turquoise">Import PML: 1 x PADV, 1 x MTP</span> | |
+| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | [01.03.2019](usecase-french.html#01032019) | Ajouter un médicament | [MTP Dermed](Bundle-3-4-MTPDermed.html) |
+| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | [01.03.2019](usecase-french.html#01032019) | Ajouter un médicament | [MTP Excipial](Bundle-3-5-MTPExcipial.html) |
+| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | [01.03.2019](usecase-french.html#01032019) | Ajouter un médicament | [MTP Hydrocortisone](Bundle-3-6-MTPHydrocortisone.html) |
+| Au niveau des transactions depuis le SI de l’hôpital | [01.03.2019](usecase-french.html#01032019) | <span style="background-color:turquoise">Import PML: 1 x PADV, 3 x MTP</span> | |
 
 #### Chez le médecin
-
+##### 12.02.2019
 Le 12.02.2019, Mme Dupond se rend chez son médecin de famille, le Dr Rochat, pour un rendez-vous de routine. Lors de l’anamnèse, il consulte son plan de médication actuel, qui indique:
 
 {:class="table table-bordered"}
@@ -69,7 +69,7 @@ Il lui transmet également le plan de médication mis à jour qui contient:
 
 
 #### À la pharmacie
-
+##### 15.02.2019
 Après 3 jours, le 15.02.2019 elle se rend à la pharmacie, elle informe cette dernière que le Temesta ne l’aide pas à dormir. La pharmacie consulte le traitement de la patiente PML (timeline):
 
 {:class="table table-bordered"}
@@ -118,6 +118,7 @@ Après ces modifications la pharmacie transmet un nouveau plan de médication qu
 
 
 #### À la sortie de l’hôpital
+##### 27.02.2019
 
 2 semaines plus tard, le 27.02.2019 Madame Dupont se rend aux urgences à cause d’un prurit insupportable (nuit), au CHUV où ils décident de l’hospitaliser. 
 
@@ -152,6 +153,7 @@ Son PML (timeline) indique:
  
 <span style="background-color:turquoise">Import PML: 1 x MTP</span>   
 
+##### 28.02.2019
 Le lendemain matin le 28.02.2019, la patiente ne réagissant pas assez rapidement au traitement, l’hôpital décide de changer la posologie.
 
 * *Cetirizine Mepha Lactab 10 mg*, **changement de posologie**, **1-0-1**, **commentaire**: pas de réaction significative avec le traitement 1 x jour. -> 2x/j. ([PADV Cetirizine](Bundle-3-2-PADVCetirizine.html), [MTP Cetirizine](Bundle-3-3-MTPCetirizine.html))
@@ -170,6 +172,8 @@ Son PML (timeline) indique:
 | Cetirizine Mepha Lactab 10 mg | 1-0-1 | Durant 3 jours | 
 
 <span style="background-color:turquoise">Import PML: 1 x PADV, 1 x MTP</span>   
+
+##### 01.03.2019
 
 Après son séjour à l’hôpital le 01.03.2019, Mme Dupont reçoit le traitement suivant:
 
