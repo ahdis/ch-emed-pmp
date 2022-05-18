@@ -26,9 +26,9 @@ Aperçu sous forme de tableau des scénarios d'utilisation suivants:
 
 #### Chez le médecin
 ##### 12.02.2019
-Le 12.02.2019, Mme Dupond se rend chez son médecin de famille, le Dr Rochat, pour un rendez-vous de routine. Lors de l’anamnèse, il consulte son plan de médication actuel, qui indique:
+Le 12.02.2019, Mme Dupond se rend chez son médecin de famille, le Dr Rochat, pour un rendez-vous de routine. Lors de l’anamnèse, il consulte son <span style="background-color:#ffffc7">plan de médication</span> actuel, qui indique:
 
-{:class="table table-bordered"}
+{:class="table table-bordered" style="background-color:#ffffc7"}
 | Reniten cpr 20 mg	| 1-0-0 | |	
 | Zocor cpr pell 40 mg | 0-0-1 | |	
 | Aspirin Cardio cpr pell 100 mg | 1-0-0 | |	
@@ -57,15 +57,15 @@ Son PML (timeline) indique:
 <span style="background-color:turquoise">Import PML: 3 x MTP</span>
 
 
-Il lui transmet également le plan de médication mis à jour qui contient:
+Il lui transmet également le <span style="background-color:#ffffc7">plan de médication</span> mis à jour qui contient:
 
-{:class="table table-bordered"}
-| <span style="background-color:yellow">Reniten cpr 20 mg</span> | <span style="background-color:yellow">1-0-0</span> |  | 
-| <span style="background-color:yellow">Zocor cpr pell 40 mg</span> | <span style="background-color:yellow">0-0-1</span> |  | 
-| <span style="background-color:yellow">Aspirine Cardio cpr pell 100 mg</span> | <span style="background-color:yellow">1-0-0</span> |  | 
-| <span style="background-color:yellow">Dafalgan cpr pell 1 g</span> | <span style="background-color:yellow">1-1-1</span> | <span style="background-color:yellow">En réserve</span> | 
-| <span style="background-color:yellow">Voltarène dolo forte émulgel</span> | <span style="background-color:yellow">1-1-1-1</span> | <span style="background-color:yellow">Durant 7 jours (19.02.2019)</span> | 
-| <span style="background-color:yellow">Temesta Expidet cpr orodisp 1 mg</span> | <span style="background-color:yellow">0-0-0-1</span> | <span style="background-color:yellow">Durant 3 jours (15.02.2019) <br>+ instruction au patient <br>+ commentaire</span> | 
+{:class="table table-bordered" style="background-color:#ffffc7"}
+| Reniten cpr 20 mg | 1-0-0 |  | 
+| Zocor cpr pell 40 mg | 0-0-1 |  | 
+| Aspirine Cardio cpr pell 100 mg | 1-0-0 |  | 
+| Dafalgan cpr pell 1 g | 1-1-1 | En réserve | 
+| Voltarène dolo forte émulgel | 1-1-1-1 | Durant 7 jours (19.02.2019) | 
+| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 3 jours (15.02.2019) <br>+ instruction au patient <br>+ commentaire | 
 
 
 #### À la pharmacie
@@ -106,15 +106,15 @@ Son PML (timeline) indique:
 <span style="background-color:turquoise">Au niveau des transactions depuis le SI de la pharmacie</span>   
 <span style="background-color:turquoise">Import PML: 2 x PADV, 1 x MTP</span>
 
-Après ces modifications la pharmacie transmet un nouveau plan de médication qui contient:
+Après ces modifications la pharmacie transmet un nouveau <span style="background-color:#ffffc7">plan de médication</span> qui contient:
 
-{:class="table table-bordered"}
-| <span style="background-color:yellow">Reniten cpr 20 mg</span> | <span style="background-color:yellow">1-0-0</span> |  | 
-| <span style="background-color:yellow">Zocor cpr pell 40 mg</span> | <span style="background-color:yellow">0-0-1</span> |  | 
-| <span style="background-color:yellow">Aspirin Cardio cpr pell 100 mg</span> | <span style="background-color:yellow">1-0-0</span> |  | 
-| <span style="background-color:yellow">Dafalgan cpr pell 1 g</span> | <span style="background-color:yellow">1-1-1</span> | <span style="background-color:yellow">En réserve</span> | 
-| <span style="background-color:yellow">Voltarène dolo forte émulgel</span> | <span style="background-color:yellow">1-1-1-1</span> | <span style="background-color:yellow">Durant 7 jours (19.02.2019)</span> | 
-| <span style="background-color:yellow">SIMILASAN Troubles du sommeil gouttes</span> | <span style="background-color:yellow">Dosage spécial</span> | <span style="background-color:yellow">Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher</span> | 
+{:class="table table-bordered" style="background-color:#ffffc7"}
+| Reniten cpr 20 mg | 1-0-0 |  | 
+| Zocor cpr pell 40 mg | 0-0-1 |  | 
+| Aspirin Cardio cpr pell 100 mg | 1-0-0 |  | 
+| Dafalgan cpr pell 1 g | 1-1-1 | En réserve | 
+| Voltarène dolo forte émulgel | 1-1-1-1 | Durant 7 jours (19.02.2019) | 
+| SIMILASAN Troubles du sommeil gouttes | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher | 
 
 
 #### À la sortie de l’hôpital
@@ -202,14 +202,14 @@ Son PML (timeline) indique:
 <span style="background-color:turquoise">Au niveau des transactions depuis le SI de l’hôpital</span>   
 <span style="background-color:turquoise">Import PML: 1 x PADV, 3 x MTP</span>   
 
-Après ces modifications la pharmacie transmet un nouveau plan de médication qui contient:
+Après ces modifications la pharmacie transmet un nouveau <span style="background-color:#ffffc7">plan de médication</span> qui contient:
 
-{:class="table table-bordered"}
-| <span style="background-color:yellow">Reniten cpr 20 mg</span> | <span style="background-color:yellow">1-0-0</span> |  | 
-| <span style="background-color:yellow">Zocor cpr pell 40 mg</span> | <span style="background-color:yellow">0-0-1</span> |  | 
-| <span style="background-color:yellow">Aspirine Cardio cpr pell 100 mg</span> | <span style="background-color:yellow">1-0-0</span> |  | 
-| <span style="background-color:yellow">Dafalgan cpr pell 1 g</span> | <span style="background-color:yellow">1-1-1</span> | <span style="background-color:yellow">En réserve</span> | 
-| <span style="background-color:yellow">SIMILASAN Troubles du sommeil gouttes</span> | <span style="background-color:yellow">Dosage spécial</span> | <span style="background-color:yellow">Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher</span> | 
-| <span style="background-color:yellow">DER-MED lotion lavante pH5.5</span> |  | <span style="background-color:yellow">Instruction</span> | 
-| <span style="background-color:yellow">Excipial U Lipolotion Fl</span> |  | <span style="background-color:yellow">Instruction</span> | 
-| <span style="background-color:yellow">Hydrocortisone Galepharm cpr 10 mg</span> | <span style="background-color:yellow">0.5-0-0.5</span> | <span style="background-color:yellow">En réserve <br>+ instruction au patient</span> | 
+{:class="table table-bordered" style="background-color:#ffffc7"}
+| Reniten cpr 20 mg | 1-0-0 |  | 
+| Zocor cpr pell 40 mg | 0-0-1 |  | 
+| Aspirine Cardio cpr pell 100 mg | 1-0-0 |  | 
+| Dafalgan cpr pell 1 g | 1-1-1 | En réserve | 
+| SIMILASAN Troubles du sommeil gouttes | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher | 
+| DER-MED lotion lavante pH5.5 |  | Instruction | 
+| Excipial U Lipolotion Fl |  | Instruction | 
+| Hydrocortisone Galepharm cpr 10 mg | 0.5-0-0.5 | En réserve <br>+ instruction au patient | 
