@@ -4,9 +4,10 @@
 
 Aperçu sous forme de tableau des scénarios d'utilisation suivants:
 
-{:class="table table-bordered"}
+{:class="table table-bordered" style="background-color:#f6f6f6"}
 | Lieu du traitement | Date | Activité/décision | Document | 
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
+|  |  | Traitement préexistant | [MTP Reniten](Bundle-0-1-MTPReniten.html), [MTP Zocor](Bundle-0-2-MTPZocor.html), [MTP Aspirin](Bundle-0-3-MTPAspirin.html) |
 | [Chez le médecin](usecase-french.html#chez-le-médecin) | [12.02.2019](usecase-french.html#12022019) | Ajouter un médicament | [MTP Dafalgan](Bundle-1-1-MTPDafalgan.html) |
 | [Chez le médecin](usecase-french.html#chez-le-médecin) | [12.02.2019](usecase-french.html#12022019) | Ajouter un médicament | [MTP Voltaren](Bundle-1-2-MTPVoltaren.html) |
 | [Chez le médecin](usecase-french.html#chez-le-médecin) | [12.02.2019](usecase-french.html#12022019) | Ajouter un médicament | [MTP Temesta](Bundle-1-3-MTPTemesta.html) |
