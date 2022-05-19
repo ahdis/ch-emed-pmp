@@ -45,11 +45,11 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normally accessible"
 * custodian = Reference(Hospital)
 
-* section.title = "Plan de traitement médicamenteux"
-* section.code = $lnc#77604-7 "Medication treatment plan.brief"
-* section.text.status = #generated
-* section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">​Excipial U Lipolotion Fl, raison: peau sensible, instruction au patient: appliquer aussi souvent que nécessaire, date de fin inconnue</div>"
-* section.entry = Reference(3-5-MedStatExcipial)
+* section[treatmentPlan].title = "Plan de traitement médicamenteux"
+* section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
+* section[treatmentPlan].text.status = #generated
+* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">​Excipial U Lipolotion Fl, raison: peau sensible, instruction au patient: appliquer aussi souvent que nécessaire, date de fin inconnue</div>"
+* section[treatmentPlan].entry = Reference(3-5-MedStatExcipial)
 
 
 Instance: 3-5-MedStatExcipial
@@ -65,7 +65,7 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * subject = Reference(MadameDupont)
 * reasonCode.text = "peau sensible"
 * note.text = "appliquer aussi souvent que nécessaire"
-* dosage[+].text = "Date de fin inconnue"
+* dosage[nonstructured][+].text = "Date de fin inconnue"
 
 
 Instance: MedExcipial

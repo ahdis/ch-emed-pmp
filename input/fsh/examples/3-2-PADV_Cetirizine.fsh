@@ -47,11 +47,11 @@ Description: "Example for a composition (CH EMED Composition PADV)"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normally accessible"
 * custodian = Reference(Hospital)
 
-* section[+].title = "Conseils sur les médicaments"
-* section[=].code = $lnc#61357-0 "Medication pharmaceutical advice.brief"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">pas de réaction significative avec le traitement 1 x jour. -> 2x/j.</div>"
-* section[=].entry = Reference(3-2-ObsCetirizine)
+* section[pharmaceuticalAdvice][+].title = "Conseils sur les médicaments"
+* section[pharmaceuticalAdvice][=].code = $lnc#61357-0 "Medication pharmaceutical advice.brief"
+* section[pharmaceuticalAdvice][=].text.status = #generated
+* section[pharmaceuticalAdvice][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">pas de réaction significative avec le traitement 1 x jour. -> 2x/j.</div>"
+* section[pharmaceuticalAdvice][=].entry = Reference(3-2-ObsCetirizine)
 
 
 Instance: 3-2-ObsCetirizine

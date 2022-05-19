@@ -45,11 +45,11 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normally accessible"
 * custodian = Reference(Hospital)
 
-* section.title = "Plan de traitement médicamenteux"
-* section.code = $lnc#77604-7 "Medication treatment plan.brief"
-* section.text.status = #generated
-* section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hydrocortisone Galepharm cpr 10 mg, 0.5-0-0.5, en réserve, raison: prurit, instruction au patient: en cas de crise de prurit</div>"
-* section.entry = Reference(3-6-MedStatHydrocortisone)
+* section[treatmentPlan].title = "Plan de traitement médicamenteux"
+* section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
+* section[treatmentPlan].text.status = #generated
+* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hydrocortisone Galepharm cpr 10 mg, 0.5-0-0.5, en réserve, raison: prurit, instruction au patient: en cas de crise de prurit</div>"
+* section[treatmentPlan].entry = Reference(3-6-MedStatHydrocortisone)
 
 
 Instance: 3-6-MedStatHydrocortisone
@@ -65,11 +65,11 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * subject = Reference(MadameDupont)
 * reasonCode.text = "prurit"
 * note.text = "en cas de crise de prurit"
-* dosage[+].timing.repeat.when[+] = #MORN
-* dosage[=].timing.repeat.when[+] = #EVE
-* dosage[=].asNeededBoolean = true
-* dosage[=].route = $edqm#20053000 "Oral use"
-* dosage[=].doseAndRate.doseQuantity = 0.5 $sct#732936001 "Tablet (unit of presentation)"
+* dosage[structurednormal][+].timing.repeat.when[+] = #MORN
+* dosage[structurednormal][=].timing.repeat.when[+] = #EVE
+* dosage[structurednormal][=].asNeededBoolean = true
+* dosage[structurednormal][=].route = $edqm#20053000 "Oral use"
+* dosage[structurednormal][=].doseAndRate.doseQuantity = 0.5 $sct#732936001 "Tablet (unit of presentation)"
 
 
 Instance: MedHydrocortisone

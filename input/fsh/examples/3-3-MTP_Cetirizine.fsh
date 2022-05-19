@@ -45,11 +45,11 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normally accessible"
 * custodian = Reference(Hospital)
 
-* section.title = "Plan de traitement médicamenteux"
-* section.code = $lnc#77604-7 "Medication treatment plan.brief"
-* section.text.status = #generated
-* section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cetirizine Mepha Lactab 10 mg, 1-0-1, durant 3 jours, raison: allergie</div>"
-* section.entry = Reference(3-3-MedStatCetirizine)
+* section[treatmentPlan].title = "Plan de traitement médicamenteux"
+* section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
+* section[treatmentPlan].text.status = #generated
+* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cetirizine Mepha Lactab 10 mg, 1-0-1, durant 3 jours, raison: allergie</div>"
+* section[treatmentPlan].entry = Reference(3-3-MedStatCetirizine)
 
 
 Instance: 3-3-MedStatCetirizine
@@ -64,11 +64,11 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedCetirizine)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "allergie"
-* dosage[+].timing.repeat.boundsPeriod.start = "2019-02-27"
-* dosage[=].timing.repeat.boundsPeriod.end = "2019-03-01"
-* dosage[=].timing.repeat.when[+] = #MORN
-* dosage[=].timing.repeat.when[+] = #EVE
-* dosage[=].route = $edqm#20053000 "Oral use"
-* dosage[=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
+* dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2019-02-27"
+* dosage[structurednormal][=].timing.repeat.boundsPeriod.end = "2019-03-01"
+* dosage[structurednormal][=].timing.repeat.when[+] = #MORN
+* dosage[structurednormal][=].timing.repeat.when[+] = #EVE
+* dosage[structurednormal][=].route = $edqm#20053000 "Oral use"
+* dosage[structurednormal][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
 
 

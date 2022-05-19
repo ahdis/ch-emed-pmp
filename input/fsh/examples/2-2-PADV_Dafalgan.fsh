@@ -45,11 +45,11 @@ Description: "Example for a composition (CH EMED Composition PADV)"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normally accessible"
 * custodian = Reference(Pharmacy)
 
-* section[+].title = "Conseils sur les médicaments"
-* section[=].code = $lnc#61357-0 "Medication pharmaceutical advice.brief"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">la patiente n’a pas pris le médicament car pas nécessaire, le Voltarène émulgel a fait son effet</div>"
-* section[=].entry = Reference(2-2-ObsDafalgan)
+* section[pharmaceuticalAdvice][+].title = "Conseils sur les médicaments"
+* section[pharmaceuticalAdvice][=].code = $lnc#61357-0 "Medication pharmaceutical advice.brief"
+* section[pharmaceuticalAdvice][=].text.status = #generated
+* section[pharmaceuticalAdvice][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">la patiente n’a pas pris le médicament car pas nécessaire, le Voltarène émulgel a fait son effet</div>"
+* section[pharmaceuticalAdvice][=].entry = Reference(2-2-ObsDafalgan)
 
 
 Instance: 2-2-ObsDafalgan

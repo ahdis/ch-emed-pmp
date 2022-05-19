@@ -47,11 +47,11 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normally accessible"
 * custodian = Reference(GeneralPractitioner)
 
-* section.title = "Plan de traitement médicamenteux"
-* section.code = $lnc#77604-7 "Medication treatment plan.brief"
-* section.text.status = #generated
-* section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dafalgan cpr pell 1 g, 1-1-1, dosage avancé: en réserve, raison: douleurs</div>"
-* section.entry = Reference(1-1-MedStatDafalgan)
+* section[treatmentPlan].title = "Plan de traitement médicamenteux"
+* section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
+* section[treatmentPlan].text.status = #generated
+* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dafalgan cpr pell 1 g, 1-1-1, dosage avancé: en réserve, raison: douleurs</div>"
+* section[treatmentPlan].entry = Reference(1-1-MedStatDafalgan)
 
 
 Instance: 1-1-MedStatDafalgan
@@ -66,12 +66,12 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedDafalgan)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "douleurs"
-* dosage[+].timing.repeat.when[+] = #MORN
-* dosage[=].timing.repeat.when[+] = #NOON
-* dosage[=].timing.repeat.when[+] = #EVE
-* dosage[=].asNeededBoolean = true
-* dosage[=].route = $edqm#20053000 "Oral use"
-* dosage[=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
+* dosage[structurednormal][+].timing.repeat.when[+] = #MORN
+* dosage[structurednormal][=].timing.repeat.when[+] = #NOON
+* dosage[structurednormal][=].timing.repeat.when[+] = #EVE
+* dosage[structurednormal][=].asNeededBoolean = true
+* dosage[structurednormal][=].route = $edqm#20053000 "Oral use"
+* dosage[structurednormal][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
 
 
 Instance: MedDafalgan

@@ -45,11 +45,11 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normally accessible"
 * custodian = Reference(Hospital)
 
-* section.title = "Plan de traitement médicamenteux"
-* section.code = $lnc#77604-7 "Medication treatment plan.brief"
-* section.text.status = #generated
-* section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">DER-MED lotion lavante pH5.5, raison: peau sensible, instruction au patient: pour se laver</div>"
-* section.entry = Reference(3-4-MedStatDermed)
+* section[treatmentPlan].title = "Plan de traitement médicamenteux"
+* section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
+* section[treatmentPlan].text.status = #generated
+* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">DER-MED lotion lavante pH5.5, raison: peau sensible, instruction au patient: pour se laver</div>"
+* section[treatmentPlan].entry = Reference(3-4-MedStatDermed)
 
 
 Instance: 3-4-MedStatDermed
@@ -65,7 +65,7 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * subject = Reference(MadameDupont)
 * reasonCode.text = "peau sensible"
 * note.text = "pour se laver"
-* dosage[+].timing.repeat.boundsPeriod.start = "2019-03-01"
+* dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2019-03-01"
 
 
 Instance: MedDermed

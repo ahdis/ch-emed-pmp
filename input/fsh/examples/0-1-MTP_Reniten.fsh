@@ -47,11 +47,11 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normally accessible"
 * custodian = Reference(GeneralPractitioner)
 
-* section.title = "Plan de traitement médicamenteux"
-* section.code = $lnc#77604-7 "Medication treatment plan.brief"
-* section.text.status = #generated
-* section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reniten cpr 20 mg, 1-0-0</div>"
-* section.entry = Reference(0-1-MedStatReniten)
+* section[treatmentPlan].title = "Plan de traitement médicamenteux"
+* section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
+* section[treatmentPlan].text.status = #generated
+* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reniten cpr 20 mg, 1-0-0</div>"
+* section[treatmentPlan].entry = Reference(0-1-MedStatReniten)
 
 
 Instance: 0-1-MedStatReniten
@@ -67,9 +67,9 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * subject = Reference(MadameDupont)
 //* reasonCode.text = "douleurs"
 //* dosage[+].timing.repeat.boundsPeriod.start = ""
-* dosage[+].timing.repeat.when[+] = #MORN
-* dosage[=].route = $edqm#20053000 "Oral use"
-* dosage[=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
+* dosage[structurednormal][+].timing.repeat.when[+] = #MORN
+* dosage[structurednormal][=].route = $edqm#20053000 "Oral use"
+* dosage[structurednormal][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
 
 
 Instance: MedReniten

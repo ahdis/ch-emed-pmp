@@ -48,11 +48,11 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normally accessible"
 * custodian = Reference(GeneralPractitioner)
 
-* section.title = "Plan de traitement médicamenteux"
-* section.code = $lnc#77604-7 "Medication treatment plan.brief"
-* section.text.status = #generated
-* section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Voltarène dolo forte émulgel, 1-1-1-1, durant 7 jours, raison: douleurs</div>"
-* section.entry = Reference(1-2-MedStatVoltaren)
+* section[treatmentPlan].title = "Plan de traitement médicamenteux"
+* section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
+* section[treatmentPlan].text.status = #generated
+* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Voltarène dolo forte émulgel, 1-1-1-1, durant 7 jours, raison: douleurs</div>"
+* section[treatmentPlan].entry = Reference(1-2-MedStatVoltaren)
 
 
 Instance: 1-2-MedStatVoltaren
@@ -67,13 +67,13 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedVoltaren)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "douleurs"
-//* dosage[+].timing.repeat.boundsDuration = 7 'd' "day"
-* dosage[+].timing.repeat.boundsPeriod.start = "2019-02-12"
-* dosage[=].timing.repeat.boundsPeriod.end = "2019-02-18"
-* dosage[=].timing.repeat.when[+] = #MORN
-* dosage[=].timing.repeat.when[+] = #NOON
-* dosage[=].timing.repeat.when[+] = #EVE
-* dosage[=].timing.repeat.when[+] = #NIGHT
+//* dosage[structurednormal][+].timing.repeat.boundsDuration = 7 'd' "day"
+* dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2019-02-12"
+* dosage[structurednormal][=].timing.repeat.boundsPeriod.end = "2019-02-18"
+* dosage[structurednormal][=].timing.repeat.when[+] = #MORN
+* dosage[structurednormal][=].timing.repeat.when[+] = #NOON
+* dosage[structurednormal][=].timing.repeat.when[+] = #EVE
+* dosage[structurednormal][=].timing.repeat.when[+] = #NIGHT
 
 
 Instance: MedVoltaren
