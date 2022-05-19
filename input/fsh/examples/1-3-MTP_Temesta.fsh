@@ -1,4 +1,4 @@
-// Temesta Expidet cpr orodisp 1 mg, 0-0-0-1, durant 3 jours, raison: pour dormir
+// Temesta Expidet cpr orodisp 1 mg, 0-0-0-1, durant 4 jours, raison: pour dormir
 // instruction au patient: laisser fondre 1 comprimé sous la langue ½ heure avant le coucher
 // + insérer un commentaire: si aucune amélioration au bout de 3 jours, reprendre contact avec le médecin
 
