@@ -64,8 +64,8 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedCetirizine)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "allergie"
-* dosage[+].timing.repeat.boundsPeriod.start = "2019-02-28"
-* dosage[=].timing.repeat.boundsPeriod.end = "2019-03-03"
+* dosage[+].timing.repeat.boundsPeriod.start = "2019-02-27"
+* dosage[=].timing.repeat.boundsPeriod.end = "2019-03-01"
 * dosage[=].timing.repeat.when[+] = #MORN
 * dosage[=].timing.repeat.when[+] = #EVE
 * dosage[=].route = $edqm#20053000 "Oral use"
