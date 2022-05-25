@@ -58,7 +58,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section[annotation][+].title = "Commentaire"
 * section[annotation][=].code = $lnc#48767-8 "Annotation comment"
 * section[annotation][=].text.status = #generated
-* section[annotation][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">si aucune amélioration au bout de 3 jours, reprendre contact avec le médecin</div>"
+* section[annotation][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">si aucune amélioration au bout de 3 jours, reprendre contact avec le médecin</p></div>"
 
 
 Instance: 1-3-MedStatTemesta
