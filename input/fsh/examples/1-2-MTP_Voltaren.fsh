@@ -51,7 +51,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section[treatmentPlan].title = "Plan de traitement médicamenteux"
 * section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
 * section[treatmentPlan].text.status = #generated
-* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Voltarène dolo forte émulgel, 1-1-1-1, durant 7 jours, raison: douleurs</div>"
+* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">Voltarène dolo forte émulgel, 1-1-1-1, durant 7 jours, raison: douleurs</p></div>"
 * section[treatmentPlan].entry = Reference(1-2-MedStatVoltaren)
 
 

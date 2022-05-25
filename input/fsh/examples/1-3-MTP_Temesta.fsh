@@ -52,7 +52,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section[treatmentPlan][+].title = "Plan de traitement médicamenteux"
 * section[treatmentPlan][=].code = $lnc#77604-7 "Medication treatment plan.brief"
 * section[treatmentPlan][=].text.status = #generated
-* section[treatmentPlan][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Temesta Expidet cpr orodisp 1 mg, 0-0-0-1, durant 3 jours, raison: pour dormir</div>"
+* section[treatmentPlan][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">Temesta Expidet cpr orodisp 1 mg, 0-0-0-1, durant 3 jours, raison: pour dormir</p></div>"
 * section[treatmentPlan][=].entry = Reference(1-3-MedStatTemesta)
 
 * section[annotation][+].title = "Commentaire"

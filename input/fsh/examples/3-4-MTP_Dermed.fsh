@@ -48,7 +48,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section[treatmentPlan].title = "Plan de traitement médicamenteux"
 * section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
 * section[treatmentPlan].text.status = #generated
-* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">DER-MED lotion lavante pH5.5, raison: peau sensible, instruction au patient: pour se laver</div>"
+* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">DER-MED lotion lavante pH5.5, raison: peau sensible, instruction au patient: pour se laver</p></div>"
 * section[treatmentPlan].entry = Reference(3-4-MedStatDermed)
 
 

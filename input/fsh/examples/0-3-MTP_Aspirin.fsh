@@ -50,7 +50,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section[treatmentPlan].title = "Plan de traitement médicamenteux"
 * section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
 * section[treatmentPlan].text.status = #generated
-* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Aspirin Cardio cpr pell 100 mg, 1-0-0</div>"
+* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">Aspirin Cardio cpr pell 100 mg, 1-0-0</p></div>"
 * section[treatmentPlan].entry = Reference(0-3-MedStatAspirin)
 
 

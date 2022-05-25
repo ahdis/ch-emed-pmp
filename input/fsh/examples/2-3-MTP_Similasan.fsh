@@ -48,7 +48,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section[treatmentPlan].title = "Plan de traitement médicamenteux"
 * section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
 * section[treatmentPlan].text.status = #generated
-* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">SIMILASAN Troubles du sommeil gouttes, dosage spécial: prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher. Raison: insomnies</div>"
+* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">SIMILASAN Troubles du sommeil gouttes, dosage spécial: prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher. Raison: insomnies</p></div>"
 * section[treatmentPlan].entry = Reference(2-3-MedStatSimilasan)
 
 

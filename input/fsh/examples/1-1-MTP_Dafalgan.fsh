@@ -50,7 +50,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section[treatmentPlan].title = "Plan de traitement médicamenteux"
 * section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
 * section[treatmentPlan].text.status = #generated
-* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dafalgan cpr pell 1 g, 1-1-1, dosage avancé: en réserve, raison: douleurs</div>"
+* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">Dafalgan cpr pell 1 g, 1-1-1, dosage avancé: en réserve, raison: douleurs</p></div>"
 * section[treatmentPlan].entry = Reference(1-1-MedStatDafalgan)
 
 

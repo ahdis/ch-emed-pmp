@@ -48,7 +48,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section[treatmentPlan].title = "Plan de traitement médicamenteux"
 * section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
 * section[treatmentPlan].text.status = #generated
-* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hydrocortisone Galepharm cpr 10 mg, 0.5-0-0.5, en réserve, raison: prurit, instruction au patient: en cas de crise de prurit</div>"
+* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">Hydrocortisone Galepharm cpr 10 mg, 0.5-0-0.5, en réserve, raison: prurit, instruction au patient: en cas de crise de prurit</p></div>"
 * section[treatmentPlan].entry = Reference(3-6-MedStatHydrocortisone)
 
 

@@ -48,7 +48,7 @@ Description: "Example for a composition (CH EMED Composition PADV)"
 * section[pharmaceuticalAdvice][+].title = "Conseils sur les médicaments"
 * section[pharmaceuticalAdvice][=].code = $lnc#61357-0 "Medication pharmaceutical advice.brief"
 * section[pharmaceuticalAdvice][=].text.status = #generated
-* section[pharmaceuticalAdvice][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">selon téléphone avec le médecin, arrêter le traitement car inefficace</div>"
+* section[pharmaceuticalAdvice][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">selon téléphone avec le médecin, arrêter le traitement car inefficace</p></div>"
 * section[pharmaceuticalAdvice][=].entry = Reference(2-1-ObsTemesta)
 
 

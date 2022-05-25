@@ -50,7 +50,7 @@ Description: "Example for a composition (CH EMED Composition PADV)"
 * section[pharmaceuticalAdvice][+].title = "Conseils sur les médicaments"
 * section[pharmaceuticalAdvice][=].code = $lnc#61357-0 "Medication pharmaceutical advice.brief"
 * section[pharmaceuticalAdvice][=].text.status = #generated
-* section[pharmaceuticalAdvice][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">pas de réaction significative avec le traitement 1 x jour. -> 2x/j.</div>"
+* section[pharmaceuticalAdvice][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">pas de réaction significative avec le traitement 1 x jour. -> 2x/j.</p></div>"
 * section[pharmaceuticalAdvice][=].entry = Reference(3-2-ObsCetirizine)
 
 

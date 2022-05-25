@@ -48,7 +48,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section[treatmentPlan].title = "Plan de traitement médicamenteux"
 * section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
 * section[treatmentPlan].text.status = #generated
-* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cetirizine Mepha Lactab 10 mg, 0-0-1, durant 3 jours, raison: allergie</div>"
+* section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">Cetirizine Mepha Lactab 10 mg, 0-0-1, durant 3 jours, raison: allergie</p></div>"
 * section[treatmentPlan].entry = Reference(3-1-MedStatCetirizine)
 
 
