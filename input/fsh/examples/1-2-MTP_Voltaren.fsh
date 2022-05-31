@@ -74,6 +74,7 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * dosage[structurednormal][=].timing.repeat.when[+] = #NOON
 * dosage[structurednormal][=].timing.repeat.when[+] = #EVE
 * dosage[structurednormal][=].timing.repeat.when[+] = #NIGHT
+* dosage[structurednormal][=].doseAndRate.doseQuantity = 1 '{Dose}' "Dose"
 
 
 Instance: MedVoltaren
