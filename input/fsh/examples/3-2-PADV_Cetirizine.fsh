@@ -23,6 +23,8 @@ Description: "Example for a bundle (CH EMED Document PADV)"
 * entry[=].resource = MadameDupontInformationRecipient
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Hospital"
 * entry[=].resource = Hospital
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorHospital"
+* entry[=].resource = DoctorHospital
 
 
 Instance: 3-2-CompCetirizine
@@ -40,7 +42,7 @@ Description: "Example for a composition (CH EMED Composition PADV)"
 * type.coding[+] = $sct#419891008 "Record artifact (record artifact)"
 * subject = Reference(MadameDupont)
 * date = "2019-02-28T11:00:00+01:00"
-* author = Reference(Hospital)
+* author = Reference(DoctorHospital)
 * title = "Commentaire relatif à la médication"
 * confidentiality = #N
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"

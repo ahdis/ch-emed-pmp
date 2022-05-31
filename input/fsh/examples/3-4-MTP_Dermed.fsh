@@ -21,6 +21,8 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = MadameDupontInformationRecipient
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Hospital"
 * entry[=].resource = Hospital
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorHospital"
+* entry[=].resource = DoctorHospital
 
 
 Instance: 3-4-CompDermed
@@ -38,7 +40,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * type.coding[+] = $sct#419891008 "Record artifact (record artifact)"
 * subject = Reference(MadameDupont)
 * date = "2019-03-01T11:00:00+01:00"
-* author = Reference(Hospital)
+* author = Reference(DoctorHospital)
 * title = "Décision thérapeutique relative à la médication"
 * confidentiality = #N
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
