@@ -80,7 +80,11 @@ Usage: #inline
 //* form = $edqm#10221000 "Film-coated tablet"
 * amount.numerator = 28 '{Piece}' "Piece(s)"
 * amount.denominator = 1 '{Package}' "Package"
-* ingredient.itemCodeableConcept = $sct#372658000 "Enalapril (substance)"	
-* ingredient.itemCodeableConcept.text = "Énalapril"
+// https://build.fhir.org/ig/hl7ch/ch-emed/ValueSet-ActivePharmaceuticalIngredient.html
+// * ingredient.itemCodeableConcept = $sct#372658000 "Enalapril (substance)"	
+// * ingredient.itemCodeableConcept.text = "Énalapril"
+* ingredient.itemCodeableConcept = $sct#387165009 "Enalapril maleate (substance)"
+* ingredient.itemCodeableConcept.text = "Énalapril maléate"
+
 * ingredient.strength.numerator = 20 'mg' "milligram"
 * ingredient.strength.denominator = 1 $sct#732936001 "Tablet (unit of presentation)"
