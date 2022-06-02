@@ -75,7 +75,7 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 Instance: MedAspirin
 InstanceOf: $ChEmedMed
 Usage: #inline
-* code = $gtin#7680460380107 "ASPIRINE CARDIO cpr pell 100 mg blister 28 pce"
+* code = $gtin#7680517950680 "ASPIRINE CARDIO cpr pell 100 mg blister 28 pce"
 * code.text = "ASPIRINE CARDIO cpr pell 100 mg blister 28 pce"
 //* form = $edqm#10221000 "Film-coated tablet"
 * amount.numerator = 28 '{Piece}' "Piece(s)"
