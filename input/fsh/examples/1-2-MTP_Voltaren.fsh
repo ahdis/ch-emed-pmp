@@ -62,7 +62,7 @@ Title: "MTP Voltaren MedStat"
 Description: "Example for a medication statement (CH EMED MedicationStatement MTP)"
 * contained = MedVoltaren
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:d598e19a-4ffe-4f0d-bd55-a56c04f5ea87"
+* identifier.value = "urn:uuid:1d50c949-c7f3-47d4-a80f-280affbb2154"
 * status = #completed
 * medicationReference = Reference(MedVoltaren)
 * subject = Reference(MadameDupont)
