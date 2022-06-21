@@ -215,3 +215,4 @@ Après ces modifications la pharmacie transmet un nouveau <span style="backgroun
 | DER-MED lotion lavante pH5.5 |  | Instruction | 
 | Excipial U Lipolotion Fl |  | Instruction | 
 | Hydrocortisone Galepharm cpr 10 mg | 0.5-0-0.5 | En réserve <br>+ instruction au patient | 
+
