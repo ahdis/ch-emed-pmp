@@ -18,11 +18,11 @@ Aperçu sous forme de tableau des scénarios d'utilisation suivants:
 | Au niveau des transactions depuis le SI de la pharmacie | [15.02.2019](usecase-french.html#15022019) | <span style="background-color:turquoise">Import PML: 2 x PADV, 1 x MTP</span> | |
 | [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | [27.02.2019](usecase-french.html#27022019) | Ajouter un médicament | [MTP Cetirizine](Bundle-3-1-MTPCetirizine.html) |
 | | [27.02.2019](usecase-french.html#27022019) | <span style="background-color:turquoise">Import PML: 1 x MTP</span> | |
-| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | [28.02.2019](usecase-french.html#28022019) | Changement de posologie | [PADV Cetirizine](Bundle-3-2-PADVCetirizine.html), [MTP Cetirizine](Bundle-3-3-MTPCetirizine.html) |
-| | [28.02.2019](usecase-french.html#28022019) | <span style="background-color:turquoise">Import PML: 1 x PADV, 1 x MTP</span> | |
-| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | [01.03.2019](usecase-french.html#01032019) | Ajouter un médicament | [MTP Dermed](Bundle-3-4-MTPDermed.html) |
-| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | [01.03.2019](usecase-french.html#01032019) | Ajouter un médicament | [MTP Excipial](Bundle-3-5-MTPExcipial.html) |
-| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | [01.03.2019](usecase-french.html#01032019) | Ajouter un médicament | [MTP Hydrocortisone](Bundle-3-6-MTPHydrocortisone.html) |
+| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | [28.02.2019](usecase-french.html#28022019) | Changement de posologie | [PADV Cetirizine](Bundle-3-2-PADVCetirizine.html) |
+| | [28.02.2019](usecase-french.html#28022019) | <span style="background-color:turquoise">Import PML: 1 x PADV</span> | |
+| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | [01.03.2019](usecase-french.html#01032019) | Ajouter un médicament | [MTP Dermed](Bundle-3-3-MTPDermed.html) |
+| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | [01.03.2019](usecase-french.html#01032019) | Ajouter un médicament | [MTP Excipial](Bundle-3-4-MTPExcipial.html) |
+| [À la sortie de l’hôpital](usecase-french.html#à-la-sortie-de-lhôpital) | [01.03.2019](usecase-french.html#01032019) | Ajouter un médicament | [MTP Hydrocortisone](Bundle-3-5-MTPHydrocortisone.html) |
 | Au niveau des transactions depuis le SI de l’hôpital | [01.03.2019](usecase-french.html#01032019) | <span style="background-color:turquoise">Import PML: 3 x MTP</span> | |
 
 #### Chez le médecin
@@ -157,7 +157,7 @@ Son PML (timeline) indique:
 ##### 28.02.2019
 Le lendemain matin le 28.02.2019, la patiente ne réagissant pas assez rapidement au traitement, l’hôpital décide de changer la posologie.
 
-* *Cetirizine Mepha Lactab 10 mg*, **changement de posologie**, **1-0-1**, **commentaire**: pas de réaction significative avec le traitement 1 x jour. -> 2x/j. ([PADV Cetirizine](Bundle-3-2-PADVCetirizine.html), [MTP Cetirizine](Bundle-3-3-MTPCetirizine.html))
+* *Cetirizine Mepha Lactab 10 mg*, **changement de posologie**, **1-0-1**, **commentaire**: pas de réaction significative avec le traitement 1 x jour. -> 2x/j. ([PADV Cetirizine](Bundle-3-2-PADVCetirizine.html))
 
 Son PML (timeline) indique:
 
@@ -172,17 +172,17 @@ Son PML (timeline) indique:
 | Cetirizine Mepha Lactab 10 mg | 0-0-1 |  | Changement: changement de posologie le 28.02.2019 <br>Commentaire: pas de réaction significative avec le traitement 1 x jour. -> 2 x/j. | 
 | Cetirizine Mepha Lactab 10 mg | 1-0-1 | Durant 3 jours | 
 
-<span style="background-color:turquoise">Import PML: 1 x PADV, 1 x MTP</span>   
+<span style="background-color:turquoise">Import PML: 1 x PADV</span>   
 
 ##### 01.03.2019
 
 Après son séjour à l’hôpital le 01.03.2019, Mme Dupont reçoit le traitement suivant:
 
-* *DER-MED lotion lavante pH5.5*, **raison**: peau sensible, **instruction au patient**: pour se laver ([MTP Dermed](Bundle-3-4-MTPDermed.html))
+* *DER-MED lotion lavante pH5.5*, **raison**: peau sensible, **instruction au patient**: pour se laver ([MTP Dermed](Bundle-3-3-MTPDermed.html))
 
-* *Excipial U Lipolotion Fl*, **raison**: peau sensible, **instruction au patient**: appliquer aussi souvent que nécessaire, **date de fin inconnue** ([MTP Excipial](Bundle-3-5-MTPExcipial.html))
+* *Excipial U Lipolotion Fl*, **raison**: peau sensible, **instruction au patient**: appliquer aussi souvent que nécessaire, **date de fin inconnue** ([MTP Excipial](Bundle-3-4-MTPExcipial.html))
 
-* *Hydrocortisone Galepharm cpr 10 mg*, **0.5-0-0.5**, **en réserve**, **raison**: prurit, **instruction au patient**: en cas de crise de prurit ([MTP Hydrocortisone](Bundle-3-6-MTPHydrocortisone.html))
+* *Hydrocortisone Galepharm cpr 10 mg*, **0.5-0-0.5**, **en réserve**, **raison**: prurit, **instruction au patient**: en cas de crise de prurit ([MTP Hydrocortisone](Bundle-3-5-MTPHydrocortisone.html))
 
 Son PML (timeline) indique:
 

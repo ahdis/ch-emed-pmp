@@ -1,6 +1,6 @@
 // ​Hydrocortisone Galepharm cpr 10 mg, 0.5-0-0.5, en réserve, raison: prurit, instruction au patient: en cas de crise de prurit
 
-Instance: 3-6-MTPHydrocortisone
+Instance: 3-5-MTPHydrocortisone
 InstanceOf: $ChEmedBundleMTP
 Usage: #example
 Title: "MTP Hydrocortisone Bundle"
@@ -10,10 +10,10 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * type = #document
 * timestamp = "2019-03-01T11:00:00+01:00"
 
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Composition/3-6-CompHydrocortisone"
-* entry[=].resource = 3-6-CompHydrocortisone
-* entry[+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/3-6-MedStatHydrocortisone"
-* entry[=].resource = 3-6-MedStatHydrocortisone
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Composition/3-5-CompHydrocortisone"
+* entry[=].resource = 3-5-CompHydrocortisone
+* entry[+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/3-5-MedStatHydrocortisone"
+* entry[=].resource = 3-5-MedStatHydrocortisone
 
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupont"
 * entry[=].resource = MadameDupont
@@ -25,7 +25,7 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = DoctorHospital
 
 
-Instance: 3-6-CompHydrocortisone
+Instance: 3-5-CompHydrocortisone
 InstanceOf: $ChEmedCompMTP
 Usage: #example
 Title: "MTP Hydrocortisone Comp"
@@ -51,10 +51,10 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
 * section[treatmentPlan].text.status = #generated
 * section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">Hydrocortisone Galepharm cpr 10 mg, 0.5-0-0.5, en réserve, raison: prurit, instruction au patient: en cas de crise de prurit</p></div>"
-* section[treatmentPlan].entry = Reference(3-6-MedStatHydrocortisone)
+* section[treatmentPlan].entry = Reference(3-5-MedStatHydrocortisone)
 
 
-Instance: 3-6-MedStatHydrocortisone
+Instance: 3-5-MedStatHydrocortisone
 InstanceOf: $ChEmedMedStatMTP
 Usage: #example
 Title: "MTP Hydrocortisone MedStat"

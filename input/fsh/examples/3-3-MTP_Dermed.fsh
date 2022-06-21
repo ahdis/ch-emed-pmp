@@ -1,6 +1,6 @@
 // DER-MED lotion lavante pH5.5, raison: peau sensible, instruction au patient: pour se laver
 
-Instance: 3-4-MTPDermed
+Instance: 3-3-MTPDermed
 InstanceOf: $ChEmedBundleMTP
 Usage: #example
 Title: "MTP Dermed Bundle"
@@ -10,10 +10,10 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * type = #document
 * timestamp = "2019-03-01T11:00:00+01:00"
 
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Composition/3-4-CompDermed"
-* entry[=].resource = 3-4-CompDermed
-* entry[+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/3-4-MedStatDermed"
-* entry[=].resource = 3-4-MedStatDermed
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Composition/3-3-CompDermed"
+* entry[=].resource = 3-3-CompDermed
+* entry[+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/3-3-MedStatDermed"
+* entry[=].resource = 3-3-MedStatDermed
 
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupont"
 * entry[=].resource = MadameDupont
@@ -25,7 +25,7 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = DoctorHospital
 
 
-Instance: 3-4-CompDermed
+Instance: 3-3-CompDermed
 InstanceOf: $ChEmedCompMTP
 Usage: #example
 Title: "MTP Dermed Comp"
@@ -51,10 +51,10 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section[treatmentPlan].code = $lnc#77604-7 "Medication treatment plan.brief"
 * section[treatmentPlan].text.status = #generated
 * section[treatmentPlan].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">DER-MED lotion lavante pH5.5, raison: peau sensible, instruction au patient: pour se laver</p></div>"
-* section[treatmentPlan].entry = Reference(3-4-MedStatDermed)
+* section[treatmentPlan].entry = Reference(3-3-MedStatDermed)
 
 
-Instance: 3-4-MedStatDermed
+Instance: 3-3-MedStatDermed
 InstanceOf: $ChEmedMedStatMTP
 Usage: #example
 Title: "MTP Dermed MedStat"

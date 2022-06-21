@@ -14,8 +14,8 @@ Description: "Example for a bundle (CH EMED Document PADV)"
 * entry[=].resource = 3-2-CompCetirizine
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/3-2-ObsCetirizine"
 * entry[=].resource = 3-2-ObsCetirizine
-* entry[+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/3-3-MedStatCetirizine"
-* entry[=].resource = 3-3-MedStatCetirizine
+* entry[+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/3-2-MedStatCetirizine"
+* entry[=].resource = 3-2-MedStatCetirizine
 
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupont"
 * entry[=].resource = MadameDupont
@@ -78,6 +78,31 @@ Description: "Example for an observation (CH EMED Observation PADV)"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
 * extension.extension[=].valueIdentifier.value = "urn:uuid:207f34b9-5bcc-4c99-8203-9bcdb467a9b8"
 
-// MedStat from second MTP (3-3-MTP_Cetirizine)
+// MedStat with updated dosage (3-3-MTP_Cetirizine)
 * extension[+].url = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-medicationstatement-changed"
-* extension[=].valueReference = Reference(3-3-MedStatCetirizine)
+* extension[=].valueReference = Reference(3-2-MedStatCetirizine)
+
+
+
+Instance: 3-2-MedStatCetirizine
+InstanceOf: $ChEmedMedStatMTP
+Usage: #example
+Title: "MTP Cetirizine MedStat"
+Description: "Example for a medication statement (CH EMED MedicationStatement MTP)"
+* contained = MedCetirizine
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:0b015b1d-2e25-441a-bb4c-95c39e1de4ad"
+* status = #completed
+* medicationReference = Reference(MedCetirizine)
+* subject = Reference(MadameDupont)
+* reasonCode.text = "allergie"
+* dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2019-02-27"
+* dosage[structurednormal][=].timing.repeat.boundsPeriod.end = "2019-03-01"
+* dosage[structurednormal][=].timing.repeat.when[+] = #MORN
+* dosage[structurednormal][=].timing.repeat.when[+] = #EVE
+* dosage[structurednormal][=].route = $edqm#20053000 "Oral use"
+* dosage[structurednormal][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
+
+
+// https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_PADV_Rev1.7_TI_2016-10-21.pdf
+// 6.3.4.3.3.13 Changed Medication Treatment Plan Item
