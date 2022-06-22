@@ -77,7 +77,7 @@ Usage: #inline
 * code.text = "EXCIPIAL U lipolotion flacon 200 ml"
 * amount.numerator = 200 'mL' "milliliter"
 * amount.denominator = 1 $sct#732986007 "Bottle"
-* ingredient.itemCodeableConcept = $sct#387092000 "Urea (substance)"
+// * ingredient.itemCodeableConcept = $sct#387092000 "Urea (substance)" not in the CH EMED value set
 * ingredient.itemCodeableConcept.text = "Urée"
 * ingredient.strength.numerator = 40 'mg' "milligram"
 * ingredient.strength.denominator = 1 'mL' "milliliter"
