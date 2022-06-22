@@ -69,11 +69,11 @@ Description: "Example for an observation (CH EMED Observation PADV)"
 * effectiveDateTime = "2019-02-28T11:00:00+01:00"
 * note.text = "pas de réaction significative avec le traitement 1 x jour. -> 2x/j."
 
-// first MTP (3-1-MTP_Cetirizine)
+// MTP (3-1-MTP_Cetirizine)
 * extension.url = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"
 * extension.extension[+].url = "id"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension.extension[=].valueIdentifier.value = "urn:uuid:207f34b9-5bcc-4c99-8203-9bcdb467a9b8"
+* extension.extension[=].valueIdentifier.value = "urn:uuid:4340fa56-50ac-4e90-ae3b-dcd35803ec38"
 * extension.extension[+].url = "externalDocumentId"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
 * extension.extension[=].valueIdentifier.value = "urn:uuid:207f34b9-5bcc-4c99-8203-9bcdb467a9b8"
