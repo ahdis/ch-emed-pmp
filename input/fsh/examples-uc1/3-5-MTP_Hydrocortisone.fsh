@@ -77,7 +77,7 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 Instance: MedHydrocortisone
 InstanceOf: $ChEmedMed
 Usage: #inline
-* code = $gtin#7680496200127 "HYDROCORTISON Galepharm Tabl 10 mg blister 20 pce"
+* code = $gtin#7680579700018 "HYDROCORTISON Galepharm Tabl 10 mg blister 20 pce"
 * code.text = "HYDROCORTISON Galepharm Tabl 10 mg blister 20 pce"
 * amount.numerator = 20 '{Piece}' "Piece(s)"
 * amount.denominator = 1 '{Package}' "Package"
