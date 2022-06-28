@@ -76,7 +76,7 @@ Usage: #inline
 * code = $gtin#7680494564580 "CLEXANE Inj Lös 60 mg/0.6ml Fertigspr"
 * code.text = "CLEXANE Inj Lös 60 mg/0.6ml Fertigspr"
 * form = $edqm#11201000	"Solution for injection"
-* amount.numerator = 10 $sct#733020007' "Syringe (unit of presentation)" // 10 Fertigspritzen
+* amount.numerator = 10 $sct#733020007 "Syringe (unit of presentation)" // 10 Fertigspritzen
 * amount.denominator = 1 '{Package}' "Package"
 * ingredient.itemCodeableConcept = $sct#108983001 "Enoxaparin sodium (substance)"	
 * ingredient.itemCodeableConcept.text = "Enoxaparin natrium"
