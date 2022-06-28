@@ -1,6 +1,7 @@
-### Ajouter un traitement et changements
-* Description use case 4 (<span style="background-color:turquoise">MTP</span>) - **Ajouter un traitement** - ajouter -> un médicament avec toutes les possibilités   
-* Description use case 5 (<span style="background-color:turquoise">PADV</span>) - **Changements** - arrêt, changement de posologie, commentaire
+### UC 1
+Ajouter un traitement et changements:
+* <span style="background-color:turquoise">MTP</span> - **Ajouter un traitement** - ajouter -> un médicament avec toutes les possibilités   
+* <span style="background-color:turquoise">PADV</span> - **Changements** - arrêt, changement de posologie, commentaire
 
 Aperçu sous forme de tableau des scénarios d'utilisation suivants:
 
@@ -215,4 +216,20 @@ Après ces modifications la pharmacie transmet un nouveau <span style="backgroun
 | DER-MED lotion lavante pH5.5 |  | Instruction | 
 | Excipial U Lipolotion Fl |  | Instruction | 
 | Hydrocortisone Galepharm cpr 10 mg | 0.5-0-0.5 | En réserve <br>+ instruction au patient | 
+
+### UC 2
+* ZOCOR Filmtabl 40 mg (nicht mehr aktiv): [MTP Zocor](Bundle-2a-MTPZocor.html)
+* RENITEN Tabl 20 mg (aktiv): [MTP Reniten](Bundle-2b-MTPReniten.html)
+* ASPIRIN CARDIO Fimtabl 100 mg (aktiv): [MTP Aspirin](Bundle-2c-MTPAspirin.html)
+* TEMESTA EXPIDET Schmelztabl 1 mg (nicht mehr aktiv): [MTP Temesta](Bundle-2d-MTPTemesta.html), [PADV Temesta](Bundle-2e-PADVTemesta.html) (CANCEL)
+* DAFALGAN Filmtabl 1 g (aktiv): [MTP Dafalgan](Bundle-2f-MTPDafalgan.html)
+* SIMILASAN Schlafstörungen Tropfen (aktiv): [MTP Similasan](Bundle-2g-MTPSimilasan.html)
+* VOLTAREN DOLO FORTE Emugel (aktiv): [MTP Voltaren](Bundle-2h-MTPVoltaren.html)
+* HYDROCORTISON Galepharm Tabl 10 mg (aktiv)
+* HYDROCORTISON Galepharm Tabl 10 mg (nicht mehr aktiv)
+* CETIRIZIN Mepha Lactab 10 mg (nicht mehr aktiv seit 25.06.2022)
+* CETIRIZIN Mepha Lactab 10 mg (aktiv)
+* CLEXANE Inj Lös 60 mg/0.6ml Fertigspr (aktiv)
+* EXFORGE HCT Filmtabl 5mg/160mg/12.5mg (aktiv)
+* IVF LEGGYFIX Fixiersyst Urinbeutel L (aktiv)
 
