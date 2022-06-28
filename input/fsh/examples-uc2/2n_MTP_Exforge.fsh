@@ -28,7 +28,7 @@ InstanceOf: $ChEmedCompMTP
 Usage: #example
 Title: "MTP Exforge Comp"
 Description: "Example for a composition (CH EMED Composition MTP)"
-* language = #fr-CH
+* language = #de-CH
 * extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"
 * extension.valueReference = Reference(MadameDupontInformationRecipient)
 * identifier.system = "urn:ietf:rfc:3986"
