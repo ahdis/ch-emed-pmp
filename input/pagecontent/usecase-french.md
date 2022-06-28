@@ -225,7 +225,7 @@ Après ces modifications la pharmacie transmet un nouveau <span style="backgroun
 * DAFALGAN Filmtabl 1 g (aktiv): [MTP Dafalgan](Bundle-2f-MTPDafalgan.html)
 * SIMILASAN Schlafstörungen Tropfen (aktiv): [MTP Similasan](Bundle-2g-MTPSimilasan.html)
 * VOLTAREN DOLO FORTE Emugel (aktiv): [MTP Voltaren](Bundle-2h-MTPVoltaren.html)
-* HYDROCORTISON Galepharm Tabl 10 mg (aktiv)
+* HYDROCORTISON Galepharm Tabl 10 mg (aktiv): [MTP Hydrocortison](Bundle-2i-MTPHydrocortison.html)
 * HYDROCORTISON Galepharm Tabl 10 mg (nicht mehr aktiv)
 * CETIRIZIN Mepha Lactab 10 mg (nicht mehr aktiv seit 25.06.2022)
 * CETIRIZIN Mepha Lactab 10 mg (aktiv)
