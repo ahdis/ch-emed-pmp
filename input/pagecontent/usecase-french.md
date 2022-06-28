@@ -229,7 +229,7 @@ Après ces modifications la pharmacie transmet un nouveau <span style="backgroun
 * HYDROCORTISON Galepharm Tabl 10 mg (nicht mehr aktiv): [PADV Hydrocortison](Bundle-2j-PADVHydrocortisone.html) (CANCEL)
 * CETIRIZIN Mepha Lactab 10 mg (nicht mehr aktiv seit 25.06.2022): [MTP Cetirizin](Bundle-2k-MTPCetirizine.html), [PADV Cetirizin](Bundle-2l-PADVCetirizine.html) (CHANGE)
 * CETIRIZIN Mepha Lactab 10 mg (aktiv)
-* CLEXANE Inj Lös 60 mg/0.6ml Fertigspr (aktiv)
+* CLEXANE Inj Lös 60 mg/0.6ml Fertigspr (aktiv): [MTP Clexane](Bundle-2m-MTPClexane.html)
 * EXFORGE HCT Filmtabl 5mg/160mg/12.5mg (aktiv)
 * IVF LEGGYFIX Fixiersyst Urinbeutel L (aktiv)
 
