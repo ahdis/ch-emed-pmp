@@ -67,7 +67,8 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * subject = Reference(MadameDupont)
 * reasonCode.text = "peau sensible"
 * note.text = "pour se laver"
-* dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2019-03-01"
+//* dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2019-03-01"
+* dosage[nonstructured][+].text = "Date de fin inconnue"
 
 
 Instance: MedDermed

@@ -179,7 +179,7 @@ Son PML (timeline) indique:
 
 Après son séjour à l’hôpital le 01.03.2019, Mme Dupont reçoit le traitement suivant:
 
-* *DER-MED lotion lavante pH5.5*, **raison**: peau sensible, **instruction au patient**: pour se laver ([MTP Dermed](Bundle-3-3-MTPDermed.html))
+* *DER-MED lotion lavante pH5.5*, **raison**: peau sensible, **instruction au patient**: pour se laver, **date de fin inconnue** ([MTP Dermed](Bundle-3-3-MTPDermed.html))
 
 * *Excipial U Lipolotion Fl*, **raison**: peau sensible, **instruction au patient**: appliquer aussi souvent que nécessaire, **date de fin inconnue** ([MTP Excipial](Bundle-3-4-MTPExcipial.html))
 
@@ -197,7 +197,7 @@ Son PML (timeline) indique:
 | SIMILASAN Troubles du sommeil gouttes | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher |  |
 | Cetirizine Mepha Lactab 10 mg | 0-0-1 |  | Changement: changement de posologie le 28.02.2019 <br>Commentaire: pas de réaction significative avec le traitement 1 x jour. -> 2 x/j. | 
 | Cetirizine Mepha Lactab 10 mg | 1-0-1 | Durant 3 jours |  | 
-| DER-MED lotion lavante pH5.5 |  |  | Instruction au patient: pour se laver | 
+| DER-MED lotion lavante pH5.5 |  | Date de fin inconnue | Instruction au patient: pour se laver | 
 | Excipial U Lipolotion Fl |  | Date de fin inconnue | Instruction au patient: appliquer aussi souvent que nécessaire | 
 | Hydrocortisone Galepharm cpr 10 mg | 0.5-0-0.5 | En réserve | Instruction au patient: en cas de crise de prurit | 
 
