@@ -3,6 +3,7 @@ Ajouter un traitement et changements:
 * <span style="background-color:turquoise">MTP</span> - **Ajouter un traitement** - ajouter -> un médicament avec toutes les possibilités   
 * <span style="background-color:turquoise">PADV</span> - **Changements** - arrêt, changement de posologie, commentaire
 
+
 Aperçu sous forme de tableau des scénarios d'utilisation suivants:
 
 {:class="table table-bordered" style="background-color:#f6f6f6"}
