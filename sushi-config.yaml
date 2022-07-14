@@ -34,7 +34,7 @@ pages:
   index.md:
     title: Home
   usecase-french.md:
-    title: Scénarios d’utilisation (cas d’application)
+    title: Use Cases
   profiles.md:
     title: Profiles
   extensions.md:
