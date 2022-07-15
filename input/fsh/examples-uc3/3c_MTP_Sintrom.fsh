@@ -64,11 +64,8 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedSintrom)
 * subject = Reference(MadameDupont)
 //* reasonCode.text = ""
-* note.text = "1. Tag 1 x tgl. 6 mg, 2. Tag 1 x tgl. 4 mg" // TBD: unstrukturierte Dosierung vs. Anwendungsinstruktion?
-* dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2022-07-10"
-* dosage[structurednormal][=].timing.repeat.boundsPeriod.end = "2022-07-19"
-* dosage[structurednormal][=].timing.repeat.when[+] = #MORN // TBD ?
-* dosage[structurednormal][=].route = $edqm#20053000 "Oral use"
-* dosage[structurednormal][=].doseAndRate.doseQuantity = 1 '{Dose}' "Dose" // TBD ?
-// ch.qligier.hug.pmp.commons.errors.exceptions.PmpInternalException: Encountered a normal dosage instructions without timing or quantity
+//* note.text = "" 
+* dosage[nonstructured][+].text = "1. Tag 1 x tgl. 6 mg, 2. Tag 1 x tgl. 4 mg"
+* dosage[nonstructured][=].timing.repeat.boundsPeriod.start = "2022-07-10"
+* dosage[nonstructured][=].timing.repeat.boundsPeriod.end = "2022-07-19"
 

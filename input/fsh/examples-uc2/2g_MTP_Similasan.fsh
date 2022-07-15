@@ -65,6 +65,7 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * subject = Reference(MadameDupont)
 * reasonCode.text = "Schlaflosigkeit"
 * dosage[nonstructured][+].text = "10 Tropfen am Abend vor dem Schlafengehen, erneuern Sie nach 15 Minuten, wenn nötig, max. 3 Mal an den ersten 3 Abenden. Danach nur noch 10 Tropfen vor dem Schlafengehen einnehmen."
+* dosage[nonstructured][=].timing.repeat.boundsPeriod.start = "2022-06-15"
 
 
 Instance: 2g-MedSimilasan

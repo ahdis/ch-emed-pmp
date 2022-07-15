@@ -63,7 +63,8 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * status = #completed
 * medicationReference = Reference(2o-MedLeggyfix)
 * subject = Reference(MadameDupont)
-* dosage[nonstructured].text = "Jeden Abend wechseln"
+* dosage[nonstructured][+].text = "Jeden Abend wechseln"
+* dosage[nonstructured][=].timing.repeat.boundsPeriod.start = "2022-06-25"
 
 
 
