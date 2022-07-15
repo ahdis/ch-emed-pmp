@@ -51,11 +51,6 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section[treatmentPlan][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">TEMESTA EXPIDET Schmelztabl 1 mg, 0-0-0-1</p></div>"
 * section[treatmentPlan][=].entry = Reference(2d-MedStatTemesta)
 
-* section[annotation][+].title = "Kommentar"
-* section[annotation][=].code = $lnc#48767-8 "Annotation comment"
-* section[annotation][=].text.status = #generated
-* section[annotation][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Wenn nach 3 Tagen keine Besserung eintritt, erneut Kontakt mit dem Arzt aufnehmen</div>"
-
 
 Instance: 2d-MedStatTemesta
 InstanceOf: $ChEmedMedStatMTP
@@ -69,7 +64,8 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(2d-MedTemesta)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "zum Schlafen"
-* note.text = "1 Tablette ½ Stunde vor dem Schlafengehen unter der Zunge zergehen lassen."
+* note.text = "1 Tablette ½ Stunde vor dem Schlafengehen unter der Zunge zergehen lassen. 
+(Wenn nach 3 Tagen keine Besserung eintritt, erneut Kontakt mit dem Arzt aufnehmen.)"
 * dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2022-05-15"
 * dosage[structurednormal][=].timing.repeat.boundsPeriod.end = "2022-05-18"
 * dosage[structurednormal][=].timing.repeat.when[+] = #NIGHT

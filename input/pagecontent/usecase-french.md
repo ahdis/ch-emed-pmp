@@ -42,8 +42,7 @@ Il lui transmet la prescription du traitement habituel pour trois mois, et ajout
 * *Voltarène dolo forte émulgel*, **1-1-1-1**, durant **7 jours**, **raison**: douleurs ([MTP Voltaren](Bundle-1-2-MTPVoltaren.html))
 
 * *Temesta Expidet cpr orodisp 1 mg*, **0-0-0-1**, durant **4 jours**, **raison**: pour dormir   
-**instruction au patient**: laisser fondre 1 comprimé sous la langue ½ heure avant le coucher   
-**+ insérer un commentaire**: si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin ([MTP Temesta](Bundle-1-3-MTPTemesta.html))
+**instruction au patient**: laisser fondre 1 comprimé sous la langue ½ heure avant le coucher (si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin) ([MTP Temesta](Bundle-1-3-MTPTemesta.html))
 
 Son PML (timeline) indique:
 
@@ -53,7 +52,7 @@ Son PML (timeline) indique:
 | Aspirine Cardio cpr pell 100 mg | 1-0-0-0 |  | 
 | Dafalgan cpr pell 1 g | 1-1-1-0 | En réserve | 
 | Voltarène dolo forte émulgel | 1-1-1-1 | Durant 7 jours | 
-| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours <br>+ instruction au patient <br>+ commentaire | 
+| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours <br>+ instruction au patient | 
 
 <span style="background-color:turquoise">Au niveau des transactions depuis le SI du médecin</span>   
 <span style="background-color:turquoise">Import PML: 3 x MTP</span>
@@ -67,7 +66,7 @@ Il lui transmet également le <span style="background-color:#ffffc7">plan de mé
 | Aspirine Cardio cpr pell 100 mg | 1-0-0-0 |  | 
 | Dafalgan cpr pell 1 g | 1-1-1-0 | En réserve | 
 | Voltarène dolo forte émulgel | 1-1-1-1 | Durant 7 jours (18.02.2019) | 
-| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours (15.02.2019) <br>+ instruction au patient <br>+ commentaire | 
+| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours (15.02.2019) <br>+ instruction au patient | 
 
 
 #### À la pharmacie
@@ -80,9 +79,9 @@ Après 3 jours, le 15.02.2019 elle se rend à la pharmacie, elle informe cette d
 | Aspirine Cardio cpr pell 100 mg | 1-0-0-0 |  | 	
 | Dafalgan cpr pell 1 g | 1-1-1-0 | En réserve | 
 | Voltarène dolo forte émulgel | 1-1-1-1 | Durant 7 jours |  
-| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours <br>+ instruction au patient <br>+ commentaire | 
+| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours <br>+ instruction au patient | 
 
-et voit le commentaire sous le Temesta: si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin. La pharmacie prend contact téléphoniquement avec le médecin et ce dernier indique que le Temesta doit être stoppé.
+et voit l'instruction au patient sous le Temesta: si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin. La pharmacie prend contact téléphoniquement avec le médecin et ce dernier indique que le Temesta doit être stoppé.
 
 * *Temesta Expidet cpr orodisp 1 mg*, **arrêter la médication**, **commentaire**: selon téléphone avec le médecin, arrêter le traitement car inefficace ([PADV Temesta (CANCEL)](Bundle-2-1-PADVTemesta.html))  
 
@@ -102,7 +101,7 @@ Son PML (timeline) indique:
 | Aspirine Cardio cpr pell 100 mg | 1-0-0-0 |  |  | 	
 | Dafalgan cpr pell 1 g | 1-1-1-0 | En réserve | Commentaire 15.02.2019: la patiente n’a pas pris de Dafalgan car les douleurs se sont atténuées grâce au Voltarène dolo forte émulgel | 
 | Voltarène dolo forte émulgel | 1-1-1-1 | Durant 7 jours |  | 
-| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours <br>+ instruction au patient <br>+ commentaire | Changements: stoppé le 15.02.2019 <br>Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace. | 
+| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours <br>+ instruction au patient | Changements: stoppé le 15.02.2019 <br>Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace. | 
 | SIMILASAN Troubles du sommeil gouttes | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher. |  | 
 
 <span style="background-color:turquoise">Au niveau des transactions depuis le SI de la pharmacie</span>   
@@ -132,7 +131,7 @@ Son PML (timeline) indique les médicaments suivants:
 | Aspirine Cardio cpr pell 100 mg | 1-0-0-0 |  |  | 	
 | Dafalgan cpr pell 1 g	| 1-1-1-0 | En réserve | Commentaire: la patiente n’a pas pris de Dafalgan car les douleurs se sont atténuées grâce au Voltarène dolo forte émulgel | 
 | Voltarène dolo forte émulgel | 1-1-1-1 | Durant 7 jours | Terminé le 18.02.2019 | 
-| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours <br>+ instruction au patient <br>+ commentaire | Changements: stoppé le 15.02.2019 <br>Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace.  | 
+| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours <br>+ instruction au patient | Changements: stoppé le 15.02.2019 <br>Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace.  | 
 | SIMILASAN Troubles du sommeil gouttes | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher |  | 
 
 L’hôpital décide de donner de la Cetirizine Mepha Lactab 10 mg le soir pour 3 jours.
@@ -149,7 +148,7 @@ Son PML (timeline) indique:
 | Aspirine Cardio cpr pell 100 mg | 1-0-0-0 |  |  | 	
 | Dafalgan cpr pell 1 g | 1-1-1 | En réserve | Commentaire: la patiente n’a pas pris de Dafalgan car les douleurs se sont atténuées grâce au Voltarène dolo forte émulgel | 
 | Voltarène dolo forte émulgel | 1-1-1-1 | Durant 7 jours | Terminé le 18.02.2019 | 
-| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours <br>+ instruction au patient <br>+ commentaire | Changements: stoppé le 15.02.2019 <br>Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace. | 
+| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours <br>+ instruction au patient | Changements: stoppé le 15.02.2019 <br>Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace. | 
 | SIMILASAN Troubles du sommeil gouttes | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher |  | 
 | Cetirizine Mepha Lactab 10 mg | 0-0-1-0 | Durant 3 jours |  | 
  
@@ -168,7 +167,7 @@ Son PML (timeline) indique:
 | Aspirine Cardio cpr pell 100 mg | 1-0-0-0 |  |  | 	
 | Dafalgan cpr pell 1 g | 1-1-1-0 | En réserve | Commentaire: la patiente n’a pas pris de Dafalgan car les douleurs se sont atténuées grâce au Voltarène dolo forte émulgel | 
 | Voltarène dolo forte émulgel | 1-1-1-1 | Durant 7 jours | Terminé le 18.02.2019 | 
-| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours <br>+ instruction au patient <br>+ commentaire | Changements: stoppé le 15.02.2019 <br>Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace.  | 
+| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours <br>+ instruction au patient | Changements: stoppé le 15.02.2019 <br>Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace.  | 
 | SIMILASAN Troubles du sommeil gouttes | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher |  |
 | Cetirizine Mepha Lactab 10 mg | 0-0-1-0 |  | Changement: changement de posologie le 28.02.2019 <br>Commentaire: pas de réaction significative avec le traitement 1 x jour. -> 2 x/j. | 
 | Cetirizine Mepha Lactab 10 mg | 1-0-1-0 | Durant 3 jours | 
@@ -193,7 +192,7 @@ Son PML (timeline) indique:
 | Aspirine Cardio cpr pell 100 mg | 1-0-0-0 |  |  | 	
 | Dafalgan cpr pell 1 g | 1-1-1-0 | En réserve | Commentaire: la patiente n’a pas pris de Dafalgan car les douleurs se sont atténuées grâce au Voltarène dolo forte émulgel | 
 | Voltarène dolo forte émulgel | 1-1-1-1 | Durant 7 jours | Terminé le 18.02.2019 | 
-| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours <br>+ instruction au patient <br>+ commentaire | Changements: stoppé le 15.02.2019 <br>Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace. | 
+| Temesta Expidet cpr orodisp 1 mg | 0-0-0-1 | Durant 4 jours <br>+ instruction au patient | Changements: stoppé le 15.02.2019 <br>Commentaire: selon téléphone avec le médecin, arrêter le traitement car inefficace. | 
 | SIMILASAN Troubles du sommeil gouttes | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher |  |
 | Cetirizine Mepha Lactab 10 mg | 0-0-1-0 |  | Changement: changement de posologie le 28.02.2019 <br>Commentaire: pas de réaction significative avec le traitement 1 x jour. -> 2 x/j. | 
 | Cetirizine Mepha Lactab 10 mg | 1-0-1-0 | Durant 3 jours |  | 

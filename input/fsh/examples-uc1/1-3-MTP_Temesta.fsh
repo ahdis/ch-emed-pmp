@@ -55,11 +55,6 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * section[treatmentPlan][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p id=\"refpdf\">Temesta Expidet cpr orodisp 1 mg, 0-0-0-1, durant 3 jours, raison: pour dormir</p></div>"
 * section[treatmentPlan][=].entry = Reference(1-3-MedStatTemesta)
 
-* section[annotation][+].title = "Commentaire"
-* section[annotation][=].code = $lnc#48767-8 "Annotation comment"
-* section[annotation][=].text.status = #generated
-* section[annotation][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">si aucune amélioration au bout de 3 jours, reprendre contact avec le médecin</div>"
-
 
 Instance: 1-3-MedStatTemesta
 InstanceOf: $ChEmedMedStatMTP
@@ -73,7 +68,8 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedTemesta)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "pour dormir"
-* note.text = "laisser fondre 1 comprimé sous la langue ½ heure avant le coucher"
+* note.text = "laisser fondre 1 comprimé sous la langue ½ heure avant le coucher 
+(si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)"
 * dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2019-02-12"
 * dosage[structurednormal][=].timing.repeat.boundsPeriod.end = "2019-02-15"
 * dosage[structurednormal][=].timing.repeat.when[+] = #NIGHT
