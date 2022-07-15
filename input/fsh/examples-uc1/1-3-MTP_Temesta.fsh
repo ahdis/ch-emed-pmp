@@ -8,7 +8,7 @@ Usage: #example
 Title: "MTP Temesta Bundle"
 Description: "Example for a bundle (CH EMED Document MTP)"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:8dbe6856-db37-412c-bbcc-6ce14e8d6918"
+* identifier.value = "urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"
 * type = #document
 * timestamp = "2019-02-12T11:00:00+01:00"
 
@@ -36,7 +36,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"
 * extension.valueReference = Reference(MadameDupontInformationRecipient)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:8dbe6856-db37-412c-bbcc-6ce14e8d6918"
+* identifier.value = "urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"
 * status = #final
 * type.coding[0] = $lnc#77603-9 "Medication treatment plan.extended"
 * type.coding[+] = $sct#419891008 "Record artifact (record artifact)"
@@ -63,7 +63,7 @@ Title: "MTP Temesta MedStat"
 Description: "Example for a medication statement (CH EMED MedicationStatement MTP)"
 * contained = MedTemesta
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:c1025a1f-e605-43ff-9a50-5d0e4cfcb918"
+* identifier.value = "urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"
 * status = #completed
 * medicationReference = Reference(MedTemesta)
 * subject = Reference(MadameDupont)

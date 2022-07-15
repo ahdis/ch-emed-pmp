@@ -4,7 +4,7 @@ Usage: #example
 Title: "MTP Similasan Bundle"
 Description: "Example for a bundle (CH EMED Document MTP)"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:2a49fc29-d28a-415c-99ec-5f4134c43e38"
+* identifier.value = "urn:uuid:06724d50-e6b6-44fa-8df3-62e14b406b3c"
 * type = #document
 * timestamp = "2022-06-15T11:00:00+01:00"
 
@@ -32,7 +32,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"
 * extension.valueReference = Reference(MadameDupontInformationRecipient)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:2a49fc29-d28a-415c-99ec-5f4134c43e38"
+* identifier.value = "urn:uuid:06724d50-e6b6-44fa-8df3-62e14b406b3c"
 * status = #final
 * type.coding[0] = $lnc#77603-9 "Medication treatment plan.extended"
 * type.coding[+] = $sct#419891008 "Record artifact (record artifact)"
@@ -59,7 +59,7 @@ Title: "MTP Similasan MedStat"
 Description: "Example for a medication statement (CH EMED MedicationStatement MTP)"
 * contained = 2g-MedSimilasan
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:2a49fc29-d28a-415c-99ec-5f4134c43e38"
+* identifier.value = "urn:uuid:06724d50-e6b6-44fa-8df3-62e14b406b3c"
 * status = #completed
 * medicationReference = Reference(2g-MedSimilasan)
 * subject = Reference(MadameDupont)

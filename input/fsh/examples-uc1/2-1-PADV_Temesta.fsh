@@ -6,7 +6,7 @@ Usage: #example
 Title: "PADV Temesta Bundle"
 Description: "Example for a bundle (CH EMED Document PADV)"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:abb775b3-c6d0-4edd-a988-b4a3335786fc"
+* identifier.value = "urn:uuid:1f88431a-80e5-46b3-a928-40bc5a63b08e"
 * type = #document
 * timestamp = "2019-02-15T11:00:00+01:00"
 
@@ -34,7 +34,7 @@ Description: "Example for a composition (CH EMED Composition PADV)"
 * extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"
 * extension.valueReference = Reference(MadameDupontInformationRecipient)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:8d3a4491-ffa8-4976-81c2-ae22528f06ac"
+* identifier.value = "urn:uuid:1f88431a-80e5-46b3-a928-40bc5a63b08e"
 * status = #final
 * type.coding[+] = $lnc#61356-2 "Medication pharmaceutical advice.extended"
 * type.coding[+] = $sct#419891008 "Record artifact (record artifact)"
@@ -60,7 +60,7 @@ Usage: #example
 Title: "PADV Temesta Obs"
 Description: "Example for an observation (CH EMED Observation PADV)"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:520a6b08-6700-4605-9019-8da17d54463a"
+* identifier.value = "urn:uuid:1f88431a-80e5-46b3-a928-40bc5a63b08e"
 * status = #final
 * code = urn:oid:1.3.6.1.4.1.19376.1.9.2.1#CANCEL
 * subject = Reference(MadameDupont)
@@ -70,7 +70,7 @@ Description: "Example for an observation (CH EMED Observation PADV)"
 * extension.url = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"
 * extension.extension[+].url = "id"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension.extension[=].valueIdentifier.value = "urn:uuid:c1025a1f-e605-43ff-9a50-5d0e4cfcb918"
+* extension.extension[=].valueIdentifier.value = "urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"
 * extension.extension[+].url = "externalDocumentId"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension.extension[=].valueIdentifier.value = "urn:uuid:8dbe6856-db37-412c-bbcc-6ce14e8d6918"
+* extension.extension[=].valueIdentifier.value = "urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"
