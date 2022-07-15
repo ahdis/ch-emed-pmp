@@ -246,9 +246,7 @@ Après ces modifications la pharmacie transmet un nouveau <span style="backgroun
 * PASPERTIN erfassen: [MTP PASPERTIN 7d](Bundle-3d-MTPPaspertin.html)
    * Datum der Erfassung: 01.07.2022
    * Posologie: 0-0-0-1
-* PASPERTIN stoppen: [PADV PASPERTIN 7d (CANCEL)](Bundle-3e-PADVPaspertin.html)
+* PASPERTIN ändern: [PADV PASPERTIN 7d (CHANGE)](Bundle-3e-PADVPaspertin.html)
    * Datum der Erfassung: 01.07.2022
    * Grund: Falsche Posologie 
-* PASPERTIN neu erfassen: [MTP PASPERTIN 10d](Bundle-3f-MTPPaspertin.html)
-   * Datum der Erfassung: 01.07.2022
    * Posologie: 1-0-0-0

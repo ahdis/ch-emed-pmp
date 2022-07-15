@@ -60,7 +60,7 @@ Description: "Example for an observation (CH EMED Observation PADV)"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:06c38351-0547-4ff7-a42e-763a96591bb7"
 * status = #final
-* code = urn:oid:1.3.6.1.4.1.19376.1.9.2.1#CANCEL
+* code = urn:oid:1.3.6.1.4.1.19376.1.9.2.1#CHANGE
 * subject = Reference(MadameDupont)
 * effectiveDateTime = "2022-07-01" // A PADV item shall not be effective in the future [PMP].
 * note.text = "Falsche Posologie"
@@ -72,3 +72,27 @@ Description: "Example for an observation (CH EMED Observation PADV)"
 * extension.extension[+].url = "externalDocumentId"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
 * extension.extension[=].valueIdentifier.value = "urn:uuid:fe9f1e16-d2ca-4329-af86-f661d2626842"
+
+// MedStat with updated dosage 
+* extension[+].url = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-medicationstatement-changed"
+* extension[=].valueReference = Reference(3e-MedStatPaspertin)
+
+
+Instance: 3e-MedStatPaspertin
+InstanceOf: $ChEmedMedStatMTP
+Usage: #example
+Title: "MTP Paspertin MedStat"
+Description: "Example for a medication statement (CH EMED MedicationStatement MTP)"
+* contained = MedPaspertin
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:5927568d-b0ef-41a0-9f2c-ecd0f77cba1b"
+* status = #completed
+* medicationReference = Reference(MedPaspertin)
+* subject = Reference(MadameDupont)
+//* reasonCode.text = ""
+//* note.text = ""
+* dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2022-07-15"
+//* dosage[structurednormal][=].timing.repeat.boundsPeriod.end = ""
+* dosage[structurednormal][=].timing.repeat.when[+] = #MORN
+* dosage[structurednormal][=].route = $edqm#20045000 "Intravenous use"
+* dosage[structurednormal][=].doseAndRate.doseQuantity = 1 '{Dose}' "Dose"
