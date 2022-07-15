@@ -235,13 +235,13 @@ Après ces modifications la pharmacie transmet un nouveau <span style="backgroun
 ### UC 3 (Datum in der Zukunft)
 * SINTROM erfassen: [MTP SINTROM 7d](Bundle-3a-MTPSintrom.html)
    * Datum der Erfassung: 01.07.2022
-   * Datum der Behandlung: 10.07.2022-16.07.2022 (7 Tage)
+   * Datum der Behandlung: 10.07.2022-16.07.2022 (7 Tage) (TBD: Start- und Enddatum kann aktuell nicht in der unstrukturierten Dosierung angegeben werden, siehe [Issue #16](https://github.com/ahdis/ch-emed-pmp/issues/16))
 * SINTROM stoppen: [PADV SINTROM 7d (CANCEL)](Bundle-3b-PADVSintrom.html)
    * Datum der Erfassung: 01.07.2022
    * Grund: Falsche Dauer 
 * SINTROM neu erfassen: [MTP SINTROM 10d](Bundle-3c-MTPSintrom.html)
    * Datum der Erfassung: 01.07.2022
-   * Datum der Behandlung: 10.07.2022-19.07.2022 (10 Tage)
+   * Datum der Behandlung: 10.07.2022-19.07.2022 (10 Tage) (TBD: Start- und Enddatum kann aktuell nicht in der unstrukturierten Dosierung angegeben werden, siehe [Issue #16](https://github.com/ahdis/ch-emed-pmp/issues/16))
 
 * PASPERTIN erfassen: [MTP PASPERTIN 7d](Bundle-3d-MTPPaspertin.html)
    * Datum der Erfassung: 01.07.2022

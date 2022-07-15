@@ -66,6 +66,6 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 //* reasonCode.text = ""
 //* note.text = "" 
 * dosage[nonstructured][+].text = "1. Tag 1 x tgl. 6 mg, 2. Tag 1 x tgl. 4 mg"
-* dosage[nonstructured][=].timing.repeat.boundsPeriod.start = "2022-07-10"
-* dosage[nonstructured][=].timing.repeat.boundsPeriod.end = "2022-07-19"
+//* dosage[nonstructured][=].timing.repeat.boundsPeriod.start = "2022-07-10"
+//* dosage[nonstructured][=].timing.repeat.boundsPeriod.end = "2022-07-19"
 
