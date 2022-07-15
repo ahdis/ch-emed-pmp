@@ -4,7 +4,7 @@ Usage: #example
 Title: "MTP Paspertin Bundle"
 Description: "Example for a bundle (CH EMED Document MTP)"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:fe9f1e16-d2ca-4329-af86-f661d2626842"
+* identifier.value = "urn:uuid:6da67859-1903-4a8c-a3ea-f60e2dfad7b5"
 * type = #document
 * timestamp = "2022-07-01T14:00:00+01:00"
 
@@ -32,7 +32,7 @@ Description: "Example for a composition (CH EMED Composition MTP)"
 * extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"
 * extension.valueReference = Reference(MadameDupontInformationRecipient)
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:fe9f1e16-d2ca-4329-af86-f661d2626842"
+* identifier.value = "urn:uuid:6da67859-1903-4a8c-a3ea-f60e2dfad7b5"
 * status = #final
 * type.coding[0] = $lnc#77603-9 "Medication treatment plan.extended"
 * type.coding[+] = $sct#419891008 "Record artifact (record artifact)"
@@ -59,7 +59,7 @@ Title: "MTP Paspertin MedStat"
 Description: "Example for a medication statement (CH EMED MedicationStatement MTP)"
 * contained = MedPaspertin
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:fe9f1e16-d2ca-4329-af86-f661d2626842"
+* identifier.value = "urn:uuid:6da67859-1903-4a8c-a3ea-f60e2dfad7b5"
 * status = #completed
 * medicationReference = Reference(MedPaspertin)
 * subject = Reference(MadameDupont)
