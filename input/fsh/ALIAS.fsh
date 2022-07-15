@@ -20,3 +20,6 @@ Alias: $ChEmedCompPADV =                    http://fhir.ch/ig/ch-emed/StructureD
 Alias: $ChEmedMed =                         http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication
 Alias: $ChEmedMedStatMTP =                  http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan
 Alias: $ChEmedObs =                         http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation
+
+Alias: $ChEmedDosageNonstructured =         http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-nonstructured
+Alias: $ChEmedDosageStructured =            http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured
