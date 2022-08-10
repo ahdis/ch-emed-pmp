@@ -1,5 +1,30 @@
 ### Introduction
-TBD
+
+#### CARA PMP direct
+CARA EMED Implementation Guide: [https://qligier.github.io/cara-emed-ig/](https://qligier.github.io/cara-emed-ig/)
+Some CDA-CH-EMED samples from CARA: [https://github.com/qligier/cdachemed-samples](https://qligier.github.io/cara-emed-ig/)
+
+Endpoints for CARA PMP through IHE / XDS:
+
+- ITI-18: services/xds/iti18
+- ITI-41: services/xds/iti41
+- ITI-43: services/xds/iti43
+- ITI-57: services/xds/iti57
+- CH:PHARM-1: services/cmpd/chpharm1
+- Logs: mhd/logs
+- Debug: mhd/debug
+- ATNA: mhd/atna
+
+Hosts
+- https://pmp.hcuge.ch/pmp/
+- https://pmp.posttenebrassilico.ch/pmp/ (temporarily)
+
+
+#### CARA PMP direct
+For using CARA PMP with Mobile Access Gateway and Matchbox see [https://github.com/ahdis/mag-emed-pmp](https://github.com/ahdis/mag-emed-pmp), logs can be checked at [https://test.ahdis.ch/eprik-cara-pmp/index.html](https://test.ahdis.ch/eprik-cara-pmp/index.html)
+
+
+
 
 ### About this IG
 #### Download
