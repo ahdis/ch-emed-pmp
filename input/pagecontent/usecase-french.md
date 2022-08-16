@@ -1,4 +1,4 @@
-### UC 1 (Behandlung hinzufügen und Änderungen)
+### UC 1 - Add and modify treatments
 Ajouter un traitement et changements:
 * <span style="background-color:turquoise">MTP</span> - **Ajouter un traitement** - ajouter -> un médicament avec toutes les possibilités   
 * <span style="background-color:turquoise">PADV</span> - **Changements** - arrêt (CANCEL), changement de posologie (CHANGE), commentaire (COMMENT)
@@ -216,37 +216,46 @@ Après ces modifications la pharmacie transmet un nouveau <span style="backgroun
 | Excipial U Lipolotion Fl |  | Instruction | 
 | Hydrocortisone Galepharm cpr 10 mg | 0.5-0-0.5-0 | En réserve <br>+ instruction au patient | 
 
-### UC 2 (Alle Elemente in der Timeline zeigen)
-* ZOCOR Filmtabl 40 mg (nicht mehr aktiv): [MTP Zocor](Bundle-2a-MTPZocor.html)
-* RENITEN Tabl 20 mg (aktiv): [MTP Reniten](Bundle-2b-MTPReniten.html)
-* ASPIRIN CARDIO Fimtabl 100 mg (aktiv): [MTP Aspirin](Bundle-2c-MTPAspirin.html)
-* TEMESTA EXPIDET Schmelztabl 1 mg (nicht mehr aktiv): [MTP Temesta](Bundle-2d-MTPTemesta.html), [PADV Temesta (COMMENT)](Bundle-2e-PADVTemesta.html)
-* DAFALGAN Filmtabl 1 g (aktiv): [MTP Dafalgan](Bundle-2f-MTPDafalgan.html)
-* SIMILASAN Schlafstörungen Tropfen (aktiv): [MTP Similasan](Bundle-2g-MTPSimilasan.html)
-* VOLTAREN DOLO FORTE Emugel (aktiv): [MTP Voltaren](Bundle-2h-MTPVoltaren.html)
-* HYDROCORTISON Galepharm Tabl 10 mg (aktiv): [MTP Hydrocortison](Bundle-2i-MTPHydrocortisone.html)
-* HYDROCORTISON Galepharm Tabl 10 mg (nicht mehr aktiv): [PADV Hydrocortison (CANCEL)](Bundle-2j-PADVHydrocortisone.html)
-* CETIRIZIN Mepha Lactab 10 mg (nicht mehr aktiv seit 25.06.2022): [MTP Cetirizin](Bundle-2k-MTPCetirizine.html), [PADV Cetirizin (CHANGE)](Bundle-2l-PADVCetirizine.html)
-* CETIRIZIN Mepha Lactab 10 mg (aktiv)
-* CLEXANE Inj Lös 60 mg/0.6ml Fertigspr (aktiv): [MTP Clexane](Bundle-2m-MTPClexane.html)
-* EXFORGE HCT Filmtabl 5mg/160mg/12.5mg (aktiv): [MTP Exforge](Bundle-2n-MTPExforge.html)
-* IVF LEGGYFIX Fixiersyst Urinbeutel L (aktiv): [MTP Leggyfix](Bundle-2o-MTPLeggyfix.html)
+### UC 2 - Show all elements in the timeline
+Representation in the Documedis timeline:   
+* <span style="background-color:#fcf295">active Medication</span>
+* <span style="background-color:#f0edc9">inactive Medication</span>
 
-### UC 3 (Datum in der Zukunft)
-* SINTROM erfassen: [MTP SINTROM 7d](Bundle-3a-MTPSintrom.html)
-   * Datum der Erfassung: 01.07.2022
-   * Datum der Behandlung: 10.07.2022-16.07.2022 (7 Tage) (TBD: Start- und Enddatum kann aktuell nicht in der unstrukturierten Dosierung angegeben werden, siehe [Issue #16](https://github.com/ahdis/ch-emed-pmp/issues/16))
-* SINTROM stoppen: [PADV SINTROM 7d (CANCEL)](Bundle-3b-PADVSintrom.html)
-   * Datum der Erfassung: 01.07.2022
-   * Grund: Falsche Dauer 
-* SINTROM neu erfassen: [MTP SINTROM 10d](Bundle-3c-MTPSintrom.html)
-   * Datum der Erfassung: 01.07.2022
-   * Datum der Behandlung: 10.07.2022-19.07.2022 (10 Tage) (TBD: Start- und Enddatum kann aktuell nicht in der unstrukturierten Dosierung angegeben werden, siehe [Issue #16](https://github.com/ahdis/ch-emed-pmp/issues/16))
+#### Active and inactive Medication with different elements
+* <span style="background-color:#f0edc9">ZOCOR Filmtabl 40 mg (no longer active):</span> [MTP Zocor](Bundle-2a-MTPZocor.html)
+* <span style="background-color:#fcf295">RENITEN Tabl 20 mg (active):</span> [MTP Reniten](Bundle-2b-MTPReniten.html)
+* <span style="background-color:#fcf295">ASPIRIN CARDIO Fimtabl 100 mg (active):</span> [MTP Aspirin](Bundle-2c-MTPAspirin.html)
+* <span style="background-color:#f0edc9">TEMESTA EXPIDET Schmelztabl 1 mg (no longer active):</span> [MTP Temesta](Bundle-2d-MTPTemesta.html), [PADV Temesta (COMMENT)](Bundle-2e-PADVTemesta.html)
+* <span style="background-color:#fcf295">DAFALGAN Filmtabl 1 g (active):</span> [MTP Dafalgan](Bundle-2f-MTPDafalgan.html)
+* <span style="background-color:#fcf295">SIMILASAN Schlafstörungen Tropfen (active):</span> [MTP Similasan](Bundle-2g-MTPSimilasan.html)
+* <span style="background-color:#fcf295">VOLTAREN DOLO FORTE Emugel (active):</span> [MTP Voltaren](Bundle-2h-MTPVoltaren.html)
+* <span style="background-color:#fcf295">HYDROCORTISON Galepharm Tabl 10 mg (active):</span> [MTP Hydrocortison](Bundle-2i-MTPHydrocortisone.html)
+* <span style="background-color:#f0edc9">HYDROCORTISON Galepharm Tabl 10 mg (no longer active):</span> [PADV Hydrocortison (CANCEL)](Bundle-2j-PADVHydrocortisone.html)
+* <span style="background-color:#f0edc9">CETIRIZIN Mepha Lactab 10 mg (no longer active since 25.06.2022):</span> [MTP Cetirizin](Bundle-2k-MTPCetirizine.html), [PADV Cetirizin (CHANGE)](Bundle-2l-PADVCetirizine.html)
+* <span style="background-color:#fcf295">CETIRIZIN Mepha Lactab 10 mg (active)</span>
+* <span style="background-color:#fcf295">CLEXANE Inj Lös 60 mg/0.6ml Fertigspr (active):</span> [MTP Clexane](Bundle-2m-MTPClexane.html)
+* <span style="background-color:#fcf295">EXFORGE HCT Filmtabl 5mg/160mg/12.5mg (active):</span> [MTP Exforge](Bundle-2n-MTPExforge.html)
+* <span style="background-color:#fcf295">IVF LEGGYFIX Fixiersyst Urinbeutel L (active):</span> [MTP Leggyfix](Bundle-2o-MTPLeggyfix.html)
 
-* PASPERTIN erfassen: [MTP PASPERTIN 7d](Bundle-3d-MTPPaspertin.html)
-   * Datum der Erfassung: 01.07.2022
-   * Posologie: 0-0-0-1
-* PASPERTIN ändern: [PADV PASPERTIN 7d (CHANGE)](Bundle-3e-PADVPaspertin.html)
-   * Datum der Erfassung: 01.07.2022
-   * Grund: Falsche Posologie 
-   * Posologie: 1-0-0-0
+### UC 3 - Date in the future
+#### Change in the future due to wrong duration
+* Add SINTROM: [MTP SINTROM 7d](Bundle-3a-MTPSintrom.html)
+   * Date of entry: 01.07.2022
+   * Date of treatment: 10.07.2022-16.07.2022 (7 days) 
+   * <span style="color:red">TBD: Start and end date currently cannot be specified in unstructured dosing, see [issue #16](https://github.com/ahdis/ch-emed-pmp/issues/16)</span>
+* Stop SINTROM: [PADV SINTROM 7d (CANCEL)](Bundle-3b-PADVSintrom.html)
+   * Date of entry: 01.07.2022
+   * Reason: Wrong duration
+* Add SINTROM new: [MTP SINTROM 10d](Bundle-3c-MTPSintrom.html)
+   * Date of entry: 01.07.2022
+   * Date of treatment with corrected end date: 10.07.2022-19.07.2022 (10 days) 
+   * <span style="color:red">TBD: Start and end date currently cannot be specified in unstructured dosing, see [issue #16](https://github.com/ahdis/ch-emed-pmp/issues/16)</span>
+
+#### Change in the future due to wrong posology
+* Add PASPERTIN: [MTP PASPERTIN 7d](Bundle-3d-MTPPaspertin.html)
+   * Date of entry: 01.07.2022
+   * Posology: 0-0-0-1
+* Change PASPERTIN: [PADV PASPERTIN 7d (CHANGE)](Bundle-3e-PADVPaspertin.html)
+   * Date of entry: 01.07.2022
+   * Reason: Wrong posology 
+   * Corrected posology: 1-0-0-0
