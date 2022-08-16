@@ -69,14 +69,14 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * dosage[structuredsplit][=].timing.repeat.boundsPeriod.start = "2022-06-23"
 * dosage[structuredsplit][=].timing.repeat.boundsPeriod.end = "2022-06-25"
 * dosage[structuredsplit][=].timing.repeat.when[+] = #MORN
-//* dosage[structuredsplit][=].asNeededBoolean = true
+* dosage[structuredsplit][=].asNeededBoolean = true
 * dosage[structuredsplit][=].route = $edqm#20053000 "Oral use"
 * dosage[structuredsplit][=].doseAndRate.doseQuantity = 0.5 $sct#732936001 "Tablet (unit of presentation)"
 * dosage[structuredsplit][+].sequence = 2
 * dosage[structuredsplit][=].timing.repeat.boundsPeriod.start = "2022-06-23"
 * dosage[structuredsplit][=].timing.repeat.boundsPeriod.end = "2022-06-25"
 * dosage[structuredsplit][=].timing.repeat.when[+] = #EVE
-//* dosage[structuredsplit][=].asNeededBoolean = true
+* dosage[structuredsplit][=].asNeededBoolean = true
 * dosage[structuredsplit][=].route = $edqm#20053000 "Oral use"
 * dosage[structuredsplit][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
 

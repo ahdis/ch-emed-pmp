@@ -67,7 +67,16 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * subject = Reference(MadameDupont)
 * reasonCode.text = "peau sensible"
 * note.text = "appliquer aussi souvent que nécessaire"
-* dosage[nonstructured][+].text = "Date de fin inconnue"
+
+* dosage[nonstructured][+].text = "Dosage selon les instructions au patient"
+
+// The element or path you referenced does not exist: dosage[nonstructured].timing.repeat.boundsPeriod.start/end
+// https://github.com/ahdis/ch-emed-pmp/issues/16
+// * dosage[nonstructured][=].timing.repeat.boundsPeriod.start = "2019-03-01"
+
+// 	Date de fin inconnue
+
+
 
 
 Instance: MedExcipial
