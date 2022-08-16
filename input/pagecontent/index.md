@@ -1,7 +1,7 @@
 ### Introduction
 
 #### CARA PMP direct
-CARA EMED Implementation Guide: [https://qligier.github.io/cara-emed-ig/](https://qligier.github.io/cara-emed-ig/)
+CARA EMED Implementation Guide: [https://qligier.github.io/cara-emed-ig/](https://qligier.github.io/cara-emed-ig/)   
 Some CDA-CH-EMED samples from CARA: [https://github.com/qligier/cdachemed-samples](https://qligier.github.io/cara-emed-ig/)
 
 Endpoints for CARA PMP through IHE / XDS:
@@ -15,12 +15,12 @@ Endpoints for CARA PMP through IHE / XDS:
 - Debug: mhd/debug
 - ATNA: mhd/atna
 
-Hosts
+Hosts:
 - https://pmp.hcuge.ch/pmp/
 - https://pmp.posttenebrassilico.ch/pmp/ (temporarily)
 
 
-#### CARA PMP direct
+#### CARA PMP with MAG & Matchbox
 For using CARA PMP with Mobile Access Gateway and Matchbox see [https://github.com/ahdis/mag-emed-pmp](https://github.com/ahdis/mag-emed-pmp), logs can be checked at [https://test.ahdis.ch/eprik-cara-pmp/index.html](https://test.ahdis.ch/eprik-cara-pmp/index.html)
 
 
