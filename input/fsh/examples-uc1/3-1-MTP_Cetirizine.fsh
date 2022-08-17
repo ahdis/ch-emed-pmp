@@ -61,7 +61,7 @@ Title: "MTP Cetirizine MedStat"
 Description: "Example for a medication statement (CH EMED MedicationStatement MTP)"
 * contained = MedCetirizine
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:4340fa56-50ac-4e90-ae3b-dcd35803ec38"
+* identifier.value = "urn:uuid:207f34b9-5bcc-4c99-8203-9bcdb467a9b8"
 * status = #completed
 * medicationReference = Reference(MedCetirizine)
 * subject = Reference(MadameDupont)
