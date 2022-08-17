@@ -212,8 +212,8 @@ Après ces modifications la pharmacie transmet un nouveau <span style="backgroun
 | Dafalgan cpr pell 1 g | 1-1-1-0 | En réserve | 
 | SIMILASAN Troubles du sommeil gouttes | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher | 
 | Cetirizine Mepha Lactab 10 mg | 1-0-1-0 | Durant 3 jours (01.03.2019) |  
-| DER-MED lotion lavante pH5.5 | Dosage spécial | En réserve <br>+ instruction au patient | 
-| Excipial U Lipolotion Fl | Dosage spécial | Instruction au patient | 
+| DER-MED lotion lavante pH5.5 | Dosage spécial | posologie selon instruction patient <br>+ en réserve <br>+ date de fin inconnue | 
+| Excipial U Lipolotion Fl | Dosage spécial | posologie selon instruction patient <br>+ date de fin inconnue | 
 | Hydrocortisone Galepharm cpr 10 mg | 0.5-0-0.5-0 | En réserve <br>+ instruction au patient | 
 
 ### UC 2 - Show all elements in the timeline
