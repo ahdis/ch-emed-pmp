@@ -68,7 +68,7 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * reasonCode.text = "peau sensible"
 * note.text = "pour se laver"
 
-* dosage[nonstructured][+].text = "Dosage selon les instructions au patient"
+* dosage[nonstructured][+].text = "posologie selon instruction patient"
 
 // The element or path you referenced does not exist: dosage[nonstructured].timing.repeat.boundsPeriod.start/end
 // https://github.com/ahdis/ch-emed-pmp/issues/16

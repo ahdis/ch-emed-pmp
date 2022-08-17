@@ -178,9 +178,9 @@ Son PML (timeline) indique:
 
 Après son séjour à l’hôpital le 01.03.2019, Mme Dupont reçoit le traitement suivant:
 
-* *DER-MED lotion lavante pH5.5*, **en réserve**, **raison**: peau sensible, **instruction au patient**: pour se laver, **date de fin inconnue** ([MTP Dermed](Bundle-3-3-MTPDermed.html))
+* *DER-MED lotion lavante pH5.5*, **dosage spécial**: posologie selon instruction patient, **en réserve**, **raison**: peau sensible, **instruction au patient**: pour se laver, **date de fin inconnue** ([MTP Dermed](Bundle-3-3-MTPDermed.html))
 
-* *Excipial U Lipolotion Fl*, **raison**: peau sensible, **instruction au patient**: appliquer aussi souvent que nécessaire, **date de fin inconnue** ([MTP Excipial](Bundle-3-4-MTPExcipial.html))
+* *Excipial U Lipolotion Fl*, **dosage spécial**: posologie selon instruction patient, **raison**: peau sensible, **instruction au patient**: appliquer aussi souvent que nécessaire, **date de fin inconnue** ([MTP Excipial](Bundle-3-4-MTPExcipial.html))
 
 * *Hydrocortisone Galepharm cpr 10 mg*, **0.5-0-0.5-0**, **en réserve**, **raison**: prurit, **instruction au patient**: en cas de crise de prurit ([MTP Hydrocortisone](Bundle-3-5-MTPHydrocortisone.html))
 
@@ -196,8 +196,8 @@ Son PML (timeline) indique:
 | SIMILASAN Troubles du sommeil gouttes | Dosage spécial | Prendre 10 gouttes le soir avant le coucher, renouveler après 15 minutes si nécessaire, max 3 fois les 3 premiers soirs. Ensuite ne prendre plus que 10 gouttes avant le coucher |  |
 | Cetirizine Mepha Lactab 10 mg | 0-0-1-0 |  | Changement: changement de posologie le 28.02.2019 <br>Commentaire: pas de réaction significative avec le traitement 1 x jour. -> 2 x/j. | 
 | Cetirizine Mepha Lactab 10 mg | 1-0-1-0 | Durant 3 jours |  | 
-| DER-MED lotion lavante pH5.5 | Dosage spécial | En réserve <br> + date de fin inconnue | Instruction au patient: pour se laver | 
-| Excipial U Lipolotion Fl | Dosage spécial | Date de fin inconnue | Instruction au patient: appliquer aussi souvent que nécessaire | 
+| DER-MED lotion lavante pH5.5 | Dosage spécial | posologie selon instruction patient <br>+ en réserve <br>+ date de fin inconnue | Instruction au patient: pour se laver | 
+| Excipial U Lipolotion Fl | Dosage spécial | posologie selon instruction patient <br>+ date de fin inconnue | Instruction au patient: appliquer aussi souvent que nécessaire | 
 | Hydrocortisone Galepharm cpr 10 mg | 0.5-0-0.5-0 | En réserve | Instruction au patient: en cas de crise de prurit | 
 
 <span style="background-color:turquoise">Au niveau des transactions depuis le SI de l’hôpital</span>   
