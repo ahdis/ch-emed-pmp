@@ -64,8 +64,9 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(2i-MedHydrocortisone)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "Juckreiz"
-* note.text = "bei einem Juckreizanfall"
+
 * dosage[structuredsplit][+].sequence = 1
+* dosage[structuredsplit][=].patientInstruction = "bei einem Juckreizanfall"
 * dosage[structuredsplit][=].timing.repeat.boundsPeriod.start = "2022-06-23"
 * dosage[structuredsplit][=].timing.repeat.boundsPeriod.end = "2022-06-25"
 * dosage[structuredsplit][=].timing.repeat.when[+] = #MORN
@@ -73,6 +74,7 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * dosage[structuredsplit][=].route = $edqm#20053000 "Oral use"
 * dosage[structuredsplit][=].doseAndRate.doseQuantity = 0.5 $sct#732936001 "Tablet (unit of presentation)"
 * dosage[structuredsplit][+].sequence = 2
+* dosage[structuredsplit][=].patientInstruction = "bei einem Juckreizanfall"
 * dosage[structuredsplit][=].timing.repeat.boundsPeriod.start = "2022-06-23"
 * dosage[structuredsplit][=].timing.repeat.boundsPeriod.end = "2022-06-25"
 * dosage[structuredsplit][=].timing.repeat.when[+] = #EVE

@@ -66,8 +66,8 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedHydrocortisone)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "prurit"
-* note.text = "en cas de crise de prurit"
-* dosage[structurednormal][+].timing.repeat.when[+] = #MORN
+* dosage[structurednormal][+].patientInstruction = "en cas de crise de prurit"
+* dosage[structurednormal][=].timing.repeat.when[+] = #MORN
 * dosage[structurednormal][=].timing.repeat.when[+] = #EVE
 * dosage[structurednormal][=].asNeededBoolean = true
 * dosage[structurednormal][=].route = $edqm#20053000 "Oral use"

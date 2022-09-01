@@ -64,7 +64,6 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedPaspertin)
 * subject = Reference(MadameDupont)
 //* reasonCode.text = ""
-//* note.text = ""
 * dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2022-07-15"
 //* dosage[structurednormal][=].timing.repeat.boundsPeriod.end = ""
 * dosage[structurednormal][=].timing.repeat.when[+] = #NIGHT

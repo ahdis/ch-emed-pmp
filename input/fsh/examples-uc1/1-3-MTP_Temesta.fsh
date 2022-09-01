@@ -68,9 +68,9 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedTemesta)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "pour dormir"
-* note.text = "laisser fondre 1 comprimé sous la langue ½ heure avant le coucher 
+* dosage[structurednormal][+].patientInstruction = "laisser fondre 1 comprimé sous la langue ½ heure avant le coucher 
 (si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)"
-* dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2019-02-12"
+* dosage[structurednormal][=].timing.repeat.boundsPeriod.start = "2019-02-12"
 * dosage[structurednormal][=].timing.repeat.boundsPeriod.end = "2019-02-15"
 * dosage[structurednormal][=].timing.repeat.when[+] = #NIGHT
 * dosage[structurednormal][=].route = $edqm#20053000 "Oral use"

@@ -66,9 +66,11 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedDermed)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "peau sensible"
-* note.text = "pour se laver"
 
 * dosage[nonstructured][+].text = "posologie selon instruction patient"
+
+// * dosage[nonstructured][=].patientInstruction = "pour se laver"
+// https://github.com/hl7ch/ch-emed/issues/120
 
 // The element or path you referenced does not exist: dosage[nonstructured].timing.repeat.boundsPeriod.start/end
 // https://github.com/ahdis/ch-emed-pmp/issues/16

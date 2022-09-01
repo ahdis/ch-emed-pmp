@@ -181,9 +181,11 @@ Après son séjour à l’hôpital le 01.03.2019, Mme Dupont reçoit le traiteme
 * *DER-MED lotion lavante pH5.5*, **dosage spécial**: posologie selon instruction patient, **en réserve**, **raison**: peau sensible, **instruction au patient**: pour se laver, **date de fin inconnue** ([MTP Dermed](Bundle-3-3-MTPDermed.html))
    * <span style="color:red">TBD: (Start and) end date currently cannot be specified in unstructured dosing, see [issue #16](https://github.com/ahdis/ch-emed-pmp/issues/16)</span> 
    * <span style="color:red">TBD: 'in reserve' currently cannot be specified in unstructured dosing, see [issue #19](https://github.com/ahdis/ch-emed-pmp/issues/19)</span> 
+   * <span style="color:red">TBD: Patient instruction currently cannot be specified in unstructured dosing, see [issue CH EMED #120](https://github.com/hl7ch/ch-emed/issues/120)</span>  
 
 * *Excipial U Lipolotion Fl*, **dosage spécial**: posologie selon instruction patient, **raison**: peau sensible, **instruction au patient**: appliquer aussi souvent que nécessaire, **date de fin inconnue** ([MTP Excipial](Bundle-3-4-MTPExcipial.html))
    * <span style="color:red">TBD: (Start and) end date currently cannot be specified in unstructured dosing, see [issue #16](https://github.com/ahdis/ch-emed-pmp/issues/16)</span>  
+   * <span style="color:red">TBD: Patient instruction currently cannot be specified in unstructured dosing, see [issue CH EMED #120](https://github.com/hl7ch/ch-emed/issues/120)</span> 
 
 * *Hydrocortisone Galepharm cpr 10 mg*, **0.5-0-0.5-0**, **en réserve**, **raison**: prurit, **instruction au patient**: en cas de crise de prurit ([MTP Hydrocortisone](Bundle-3-5-MTPHydrocortisone.html))
 

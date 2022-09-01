@@ -63,8 +63,8 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * status = #completed
 * medicationReference = Reference(2n-MedExforge)
 * subject = Reference(MadameDupont)
-* note.text = "Unabhängig der Mahlzeiten"
-* dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2022-06-25"
+* dosage[structurednormal][+].patientInstruction = "Unabhängig der Mahlzeiten"
+* dosage[structurednormal][=].timing.repeat.boundsPeriod.start = "2022-06-25"
 * dosage[structurednormal][=].timing.repeat.when[+] = #MORN
 * dosage[structurednormal][=].route = $edqm#20053000 "Oral use"
 * dosage[structurednormal][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
