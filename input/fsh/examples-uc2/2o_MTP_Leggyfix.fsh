@@ -19,8 +19,10 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = MadameDupontInformationRecipient
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Hospital"
 * entry[=].resource = Hospital
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorHospital"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/DoctorHospital"
 * entry[=].resource = DoctorHospital
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Hopital"
+* entry[=].resource = Hopital
 
 
 Instance: 2o-CompLeggyfix
@@ -63,8 +65,8 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * status = #completed
 * medicationReference = Reference(2o-MedLeggyfix)
 * subject = Reference(MadameDupont)
-* dosage[nonstructured][+].text = "Jeden Abend wechseln"
-// * dosage[nonstructured][=].timing.repeat.boundsPeriod.start = "2022-06-25"
+* dosage[baseEntry][+].text = "Jeden Abend wechseln"
+// * dosage[baseEntry][=].timing.repeat.boundsPeriod.start = "2022-06-25"
 
 
 

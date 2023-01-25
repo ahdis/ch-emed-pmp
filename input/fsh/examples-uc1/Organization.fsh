@@ -1,5 +1,5 @@
 Instance: GeneralPractitioner
-InstanceOf: $ChCoreOrganizationEpr
+InstanceOf: $ChEmedOrganization
 Usage: #example
 Title: "Médecin de famille"
 Description: "Example for an organization (CH Core Organization EPR)"
@@ -13,7 +13,7 @@ Description: "Example for an organization (CH Core Organization EPR)"
 
 
 Instance: Pharmacy
-InstanceOf: $ChCoreOrganizationEpr
+InstanceOf: $ChEmedOrganization
 Usage: #example
 Title: "Pharmacie"
 Description: "Example for an organization (CH Core Organization EPR)"
@@ -27,7 +27,7 @@ Description: "Example for an organization (CH Core Organization EPR)"
 
 
 Instance: Hospital
-InstanceOf: $ChCoreOrganizationEpr
+InstanceOf: $ChEmedOrganization
 Usage: #example
 Title: "Hôpital"
 Description: "Example for an organization (CH Core Organization EPR)"

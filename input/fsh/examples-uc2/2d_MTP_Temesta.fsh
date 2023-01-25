@@ -17,8 +17,10 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = MadameDupont
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupontInformationRecipient"
 * entry[=].resource = MadameDupontInformationRecipient
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorRochat"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/DoctorRochat"
 * entry[=].resource = DoctorRochat
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Rochat"
+* entry[=].resource = Rochat
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/GeneralPractitioner"
 * entry[=].resource = GeneralPractitioner
 
@@ -64,13 +66,13 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(2d-MedTemesta)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "zum Schlafen"
-* dosage[structurednormal][+].patientInstruction = "1 Tablette ½ Stunde vor dem Schlafengehen unter der Zunge zergehen lassen. 
+* dosage[baseEntry][+].patientInstruction = "1 Tablette ½ Stunde vor dem Schlafengehen unter der Zunge zergehen lassen. 
 (Wenn nach 3 Tagen keine Besserung eintritt, erneut Kontakt mit dem Arzt aufnehmen.)"
-* dosage[structurednormal][=].timing.repeat.boundsPeriod.start = "2022-05-15"
-* dosage[structurednormal][=].timing.repeat.boundsPeriod.end = "2022-05-18"
-* dosage[structurednormal][=].timing.repeat.when[+] = #NIGHT
-* dosage[structurednormal][=].route = $edqm#20053000 "Oral use"
-* dosage[structurednormal][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
+* dosage[baseEntry][=].timing.repeat.boundsPeriod.start = "2022-05-15"
+* dosage[baseEntry][=].timing.repeat.boundsPeriod.end = "2022-05-18"
+* dosage[baseEntry][=].timing.repeat.when[+] = #NIGHT
+* dosage[baseEntry][=].route = $edqm#20053000 "Oral use"
+* dosage[baseEntry][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
 
 
 Instance: 2d-MedTemesta

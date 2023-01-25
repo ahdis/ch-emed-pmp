@@ -23,8 +23,10 @@ Description: "Example for a bundle (CH EMED Document PADV)"
 * entry[=].resource = MadameDupontInformationRecipient
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Hospital"
 * entry[=].resource = Hospital
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorHospital"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/DoctorHospital"
 * entry[=].resource = DoctorHospital
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Hopital"
+* entry[=].resource = Hopital
 
 
 Instance: 3-2-CompCetirizine
@@ -96,12 +98,12 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedCetirizine)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "allergie"
-* dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2019-02-27"
-* dosage[structurednormal][=].timing.repeat.boundsPeriod.end = "2019-03-01"
-* dosage[structurednormal][=].timing.repeat.when[+] = #MORN
-* dosage[structurednormal][=].timing.repeat.when[+] = #EVE
-* dosage[structurednormal][=].route = $edqm#20053000 "Oral use"
-* dosage[structurednormal][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
+* dosage[baseEntry][+].timing.repeat.boundsPeriod.start = "2019-02-27"
+* dosage[baseEntry][=].timing.repeat.boundsPeriod.end = "2019-03-01"
+* dosage[baseEntry][=].timing.repeat.when[+] = #MORN
+* dosage[baseEntry][=].timing.repeat.when[+] = #EVE
+* dosage[baseEntry][=].route = $edqm#20053000 "Oral use"
+* dosage[baseEntry][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
 
 
 // https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_PADV_Rev1.7_TI_2016-10-21.pdf

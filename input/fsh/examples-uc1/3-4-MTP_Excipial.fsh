@@ -21,8 +21,10 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = MadameDupontInformationRecipient
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Hospital"
 * entry[=].resource = Hospital
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorHospital"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/DoctorHospital"
 * entry[=].resource = DoctorHospital
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Hopital"
+* entry[=].resource = Hopital
 
 
 Instance: 3-4-CompExcipial
@@ -67,15 +69,9 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * subject = Reference(MadameDupont)
 * reasonCode.text = "peau sensible"
 
-* dosage[nonstructured][+].text = "posologie selon instruction patient"
-
-// https://github.com/hl7ch/ch-emed/issues/120
-// * dosage[nonstructured][=].patientInstruction = "appliquer aussi souvent que nécessaire"
-
-// The element or path you referenced does not exist: dosage[nonstructured].timing.repeat.boundsPeriod.start/end
-// https://github.com/ahdis/ch-emed-pmp/issues/16
-// * dosage[nonstructured][=].timing.repeat.boundsPeriod.start = "2019-03-01"
-
+* dosage[baseEntry][+].text = "posologie selon instruction patient"
+* dosage[baseEntry][=].patientInstruction = "appliquer aussi souvent que nécessaire"
+* dosage[baseEntry][=].timing.repeat.boundsPeriod.start = "2019-03-01"
 // 	Date de fin inconnue
 
 

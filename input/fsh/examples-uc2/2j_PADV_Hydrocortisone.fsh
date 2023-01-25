@@ -19,8 +19,10 @@ Description: "Example for a bundle (CH EMED Document PADV)"
 * entry[=].resource = MadameDupontInformationRecipient
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Hospital"
 * entry[=].resource = Hospital
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorHospital"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/DoctorHospital"
 * entry[=].resource = DoctorHospital
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Hopital"
+* entry[=].resource = Hopital
 
 
 Instance: 2j-CompHydrocortisone

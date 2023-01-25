@@ -19,8 +19,11 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = MadameDupontInformationRecipient
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Pharmacy"
 * entry[=].resource = Pharmacy
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pharmacist"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/Pharmacist"
 * entry[=].resource = Pharmacist
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pharm"
+* entry[=].resource = Pharm
+
 
 
 Instance: 2k-CompCetirizine
@@ -64,11 +67,11 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(2k-MedCetirizine)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "Allergie"
-* dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2022-06-24"
-* dosage[structurednormal][=].timing.repeat.boundsPeriod.end = "2022-06-26"
-* dosage[structurednormal][=].timing.repeat.when[+] = #EVE
-* dosage[structurednormal][=].route = $edqm#20053000 "Oral use"
-* dosage[structurednormal][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
+* dosage[baseEntry][+].timing.repeat.boundsPeriod.start = "2022-06-24"
+* dosage[baseEntry][=].timing.repeat.boundsPeriod.end = "2022-06-26"
+* dosage[baseEntry][=].timing.repeat.when[+] = #EVE
+* dosage[baseEntry][=].route = $edqm#20053000 "Oral use"
+* dosage[baseEntry][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
 
 
 Instance: 2k-MedCetirizine

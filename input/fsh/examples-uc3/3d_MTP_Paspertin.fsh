@@ -17,8 +17,10 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = MadameDupont
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupontInformationRecipient"
 * entry[=].resource = MadameDupontInformationRecipient
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorRochat"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/DoctorRochat"
 * entry[=].resource = DoctorRochat
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Rochat"
+* entry[=].resource = Rochat
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/GeneralPractitioner"
 * entry[=].resource = GeneralPractitioner
 
@@ -64,11 +66,11 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedPaspertin)
 * subject = Reference(MadameDupont)
 //* reasonCode.text = ""
-* dosage[structurednormal][+].timing.repeat.boundsPeriod.start = "2022-07-15"
-//* dosage[structurednormal][=].timing.repeat.boundsPeriod.end = ""
-* dosage[structurednormal][=].timing.repeat.when[+] = #NIGHT
-* dosage[structurednormal][=].route = $edqm#20045000 "Intravenous use"
-* dosage[structurednormal][=].doseAndRate.doseQuantity = 1 '{Dose}' "Dose"
+* dosage[baseEntry][+].timing.repeat.boundsPeriod.start = "2022-07-15"
+//* dosage[baseEntry][=].timing.repeat.boundsPeriod.end = ""
+* dosage[baseEntry][=].timing.repeat.when[+] = #NIGHT
+* dosage[baseEntry][=].route = $edqm#20045000 "Intravenous use"
+* dosage[baseEntry][=].doseAndRate.doseQuantity = 1 '{Dose}' "Dose"
 
 
 Instance: MedPaspertin

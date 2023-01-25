@@ -17,8 +17,10 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = MadameDupont
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupontInformationRecipient"
 * entry[=].resource = MadameDupontInformationRecipient
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorRochat"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/DoctorRochat"
 * entry[=].resource = DoctorRochat
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Rochat"
+* entry[=].resource = Rochat
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/GeneralPractitioner"
 * entry[=].resource = GeneralPractitioner
 
@@ -64,7 +66,7 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedSintrom)
 * subject = Reference(MadameDupont)
 //* reasonCode.text = ""
-* dosage[nonstructured][+].text = "1. Tag 1 x tgl. 6 mg, 2. Tag 1 x tgl. 4 mg"
-//* dosage[nonstructured][=].timing.repeat.boundsPeriod.start = "2022-07-10"
-//* dosage[nonstructured][=].timing.repeat.boundsPeriod.end = "2022-07-19"
+* dosage[baseEntry][+].text = "1. Tag 1 x tgl. 6 mg, 2. Tag 1 x tgl. 4 mg"
+* dosage[baseEntry][=].timing.repeat.boundsPeriod.start = "2022-07-10"
+* dosage[baseEntry][=].timing.repeat.boundsPeriod.end = "2022-07-19"
 

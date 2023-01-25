@@ -21,8 +21,10 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = MadameDupont
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupontInformationRecipient"
 * entry[=].resource = MadameDupontInformationRecipient
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorRochat"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/DoctorRochat"
 * entry[=].resource = DoctorRochat
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Rochat"
+* entry[=].resource = Rochat
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/GeneralPractitioner"
 * entry[=].resource = GeneralPractitioner
 
@@ -68,13 +70,13 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedTemesta)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "pour dormir"
-* dosage[structurednormal][+].patientInstruction = "laisser fondre 1 comprimé sous la langue ½ heure avant le coucher 
+* dosage[baseEntry][+].patientInstruction = "laisser fondre 1 comprimé sous la langue ½ heure avant le coucher 
 (si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)"
-* dosage[structurednormal][=].timing.repeat.boundsPeriod.start = "2019-02-12"
-* dosage[structurednormal][=].timing.repeat.boundsPeriod.end = "2019-02-15"
-* dosage[structurednormal][=].timing.repeat.when[+] = #NIGHT
-* dosage[structurednormal][=].route = $edqm#20053000 "Oral use"
-* dosage[structurednormal][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
+* dosage[baseEntry][=].timing.repeat.boundsPeriod.start = "2019-02-12"
+* dosage[baseEntry][=].timing.repeat.boundsPeriod.end = "2019-02-15"
+* dosage[baseEntry][=].timing.repeat.when[+] = #NIGHT
+* dosage[baseEntry][=].route = $edqm#20053000 "Oral use"
+* dosage[baseEntry][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
 
 
 Instance: MedTemesta

@@ -19,8 +19,10 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = MadameDupontInformationRecipient
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Hospital"
 * entry[=].resource = Hospital
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorHospital"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/DoctorHospital"
 * entry[=].resource = DoctorHospital
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Hopital"
+* entry[=].resource = Hopital
 
 
 Instance: 2i-CompHydrocortisone
@@ -65,22 +67,17 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * subject = Reference(MadameDupont)
 * reasonCode.text = "Juckreiz"
 
-* dosage[structuredsplit][+].sequence = 1
-* dosage[structuredsplit][=].patientInstruction = "bei einem Juckreizanfall"
-* dosage[structuredsplit][=].timing.repeat.boundsPeriod.start = "2022-06-23"
-* dosage[structuredsplit][=].timing.repeat.boundsPeriod.end = "2022-06-25"
-* dosage[structuredsplit][=].timing.repeat.when[+] = #MORN
-* dosage[structuredsplit][=].asNeededBoolean = true
-* dosage[structuredsplit][=].route = $edqm#20053000 "Oral use"
-* dosage[structuredsplit][=].doseAndRate.doseQuantity = 0.5 $sct#732936001 "Tablet (unit of presentation)"
-* dosage[structuredsplit][+].sequence = 2
-* dosage[structuredsplit][=].patientInstruction = "bei einem Juckreizanfall"
-* dosage[structuredsplit][=].timing.repeat.boundsPeriod.start = "2022-06-23"
-* dosage[structuredsplit][=].timing.repeat.boundsPeriod.end = "2022-06-25"
-* dosage[structuredsplit][=].timing.repeat.when[+] = #EVE
-* dosage[structuredsplit][=].asNeededBoolean = true
-* dosage[structuredsplit][=].route = $edqm#20053000 "Oral use"
-* dosage[structuredsplit][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
+* dosage[baseEntry][+].sequence = 1
+* dosage[baseEntry][=].patientInstruction = "bei einem Juckreizanfall"
+* dosage[baseEntry][=].timing.repeat.boundsPeriod.start = "2022-06-23"
+* dosage[baseEntry][=].timing.repeat.boundsPeriod.end = "2022-06-25"
+* dosage[baseEntry][=].timing.repeat.when[+] = #MORN
+* dosage[baseEntry][=].asNeededBoolean = true
+* dosage[baseEntry][=].route = $edqm#20053000 "Oral use"
+* dosage[baseEntry][=].doseAndRate.doseQuantity = 0.5 $sct#732936001 "Tablet (unit of presentation)"
+* dosage[additionalEntry][+].sequence = 2
+* dosage[additionalEntry][=].timing.repeat.when[+] = #EVE
+* dosage[additionalEntry][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
 
 
 Instance: 2i-MedHydrocortisone

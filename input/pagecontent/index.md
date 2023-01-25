@@ -1,8 +1,8 @@
 ### Introduction
 
 #### CARA PMP direct
-CARA EMED Implementation Guide: [https://qligier.github.io/cara-emed-ig/](https://qligier.github.io/cara-emed-ig/)   
-Some CDA-CH-EMED samples from CARA: [https://github.com/qligier/cdachemed-samples](https://qligier.github.io/cara-emed-ig/)
+* CARA’s eMedication service Integration Guide: [https://cara-ch.github.io/emed-service-guide/](https://cara-ch.github.io/emed-service-guide/)   
+* FHIR Implementation Guide which defines the documents for the exchange of medication information in the context of the eMedication service: [https://build.fhir.org/ig/CARA-ch/ch-emed-epr/](https://build.fhir.org/ig/CARA-ch/ch-emed-epr/)
 
 Endpoints for CARA PMP through IHE / XDS:
 
@@ -21,7 +21,7 @@ Hosts:
 
 
 #### CARA PMP with MAG & Matchbox
-For using CARA PMP with Mobile Access Gateway and Matchbox see [https://github.com/ahdis/mag-emed-pmp](https://github.com/ahdis/mag-emed-pmp), logs can be checked at [https://test.ahdis.ch/eprik-cara-pmp/index.html](https://test.ahdis.ch/eprik-cara-pmp/index.html)
+For using CARA PMP with Mobile Access Gateway and Matchbox see [https://github.com/ahdis/mag-emed-pmp](https://github.com/ahdis/mag-emed-pmp), logs can be checked at [https://test.ahdis.ch/eprik-proxy-cara/](https://test.ahdis.ch/eprik-proxy-cara/)
 
 
 
@@ -30,8 +30,19 @@ For using CARA PMP with Mobile Access Gateway and Matchbox see [https://github.c
 #### Download
 You can download this implementation guide in the [NPM package](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) format from [here](package.tgz).
 
-### Copyright
-This specification includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation ([IHTSDO](http://snomed.org/)) and distributed by agreement between IHTSDO and HL7. Implementers of these specification must have the appropriate SNOMED CT Affiliate license - for more information contact 
-<https://www.snomed.org/snomed-ct/getsnomed> or <info@snomed.org>.
 
-This specification contains content from LOINC® (<http://loinc.org>). The LOINC table, LOINC codes, and LOINC panels and forms file are copyright © 1995-2014, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and available at no cost under the license at <http://loinc.org/terms-of-use>.
+### IP Statements
+
+{% include ip-statements.xhtml %}
+
+### Cross Version Analysis
+
+{% include cross-version-analysis.xhtml %}
+
+### Dependency Table
+
+{% include dependency-table.xhtml %}
+
+### Globals Table
+
+{% include globals-table.xhtml %}

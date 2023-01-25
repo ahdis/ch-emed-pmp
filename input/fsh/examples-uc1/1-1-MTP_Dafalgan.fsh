@@ -17,8 +17,10 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupont"
 * entry[=].resource = MadameDupont
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorRochat"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/DoctorRochat"
 * entry[=].resource = DoctorRochat
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Rochat"
+* entry[=].resource = Rochat
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/GeneralPractitioner"
 * entry[=].resource = GeneralPractitioner
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MadameDupontInformationRecipient"
@@ -66,12 +68,12 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedDafalgan)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "douleurs"
-* dosage[structurednormal][+].timing.repeat.when[+] = #MORN
-* dosage[structurednormal][=].timing.repeat.when[+] = #NOON
-* dosage[structurednormal][=].timing.repeat.when[+] = #EVE
-* dosage[structurednormal][=].asNeededBoolean = true
-* dosage[structurednormal][=].route = $edqm#20053000 "Oral use"
-* dosage[structurednormal][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
+* dosage[baseEntry][+].timing.repeat.when[+] = #MORN
+* dosage[baseEntry][=].timing.repeat.when[+] = #NOON
+* dosage[baseEntry][=].timing.repeat.when[+] = #EVE
+* dosage[baseEntry][=].asNeededBoolean = true
+* dosage[baseEntry][=].route = $edqm#20053000 "Oral use"
+* dosage[baseEntry][=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
 
 
 Instance: MedDafalgan

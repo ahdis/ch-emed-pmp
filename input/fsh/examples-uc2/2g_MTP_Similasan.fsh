@@ -19,8 +19,11 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = MadameDupontInformationRecipient
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Pharmacy"
 * entry[=].resource = Pharmacy
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pharmacist"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/Pharmacist"
 * entry[=].resource = Pharmacist
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pharm"
+* entry[=].resource = Pharm
+
 
 
 Instance: 2g-CompSimilasan
@@ -64,8 +67,8 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(2g-MedSimilasan)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "Schlaflosigkeit"
-* dosage[nonstructured][+].text = "10 Tropfen am Abend vor dem Schlafengehen, erneuern Sie nach 15 Minuten, wenn nötig, max. 3 Mal an den ersten 3 Abenden. Danach nur noch 10 Tropfen vor dem Schlafengehen einnehmen."
-// * dosage[nonstructured][=].timing.repeat.boundsPeriod.start = "2022-06-15"
+* dosage[baseEntry][+].text = "10 Tropfen am Abend vor dem Schlafengehen, erneuern Sie nach 15 Minuten, wenn nötig, max. 3 Mal an den ersten 3 Abenden. Danach nur noch 10 Tropfen vor dem Schlafengehen einnehmen."
+// * dosage[baseEntry][=].timing.repeat.boundsPeriod.start = "2022-06-15"
 
 
 Instance: 2g-MedSimilasan

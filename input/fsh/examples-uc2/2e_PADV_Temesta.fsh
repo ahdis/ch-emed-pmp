@@ -19,8 +19,11 @@ Description: "Example for a bundle (CH EMED Document PADV)"
 * entry[=].resource = MadameDupontInformationRecipient
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Pharmacy"
 * entry[=].resource = Pharmacy
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pharmacist"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/Pharmacist"
 * entry[=].resource = Pharmacist
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pharm"
+* entry[=].resource = Pharm
+
 
 
 Instance: 2e-CompTemesta

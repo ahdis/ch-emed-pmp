@@ -12,8 +12,8 @@ status: draft
 license: CC-BY-SA-4.0
 copyright: CC-BY-SA-4.0
 jurisdiction: urn:iso:std:iso:3166#CHE
-date: 2022-05-10
-version: 0.1.0
+date: 2023-01-25
+version: 0.2.0
 fhirVersion: 4.0.1
 copyrightYear: 2022+
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters -> Parameter: releaselabel
@@ -27,27 +27,18 @@ contact:
     value: http://hcisolutions.ch
 
 dependencies:
-  ch.fhir.ig.ch-core: 2.1.0
-  ch.fhir.ig.ch-emed: 2.1.0
+  ch.fhir.ig.ch-core: current
+  ch.fhir.ig.ch-emed: current
 
 pages:
   index.md:
     title: Home
   usecase-french.md:
     title: Use Cases
-  profiles.md:
-    title: Profiles
-  extensions.md:
-    title: Extensions
-  terminology.md:
-    title: Terminology
 
 menu:
   Home: index.html
   Use Case: usecase-french.html
-  Profiles: profiles.html
-  Extensions: extensions.html
-  Terminology: terminology.html
   Artifacts: artifacts.html
 
 # Parameters

@@ -21,8 +21,10 @@ Description: "Example for a bundle (CH EMED Document MTP)"
 * entry[=].resource = MadameDupontInformationRecipient
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Hospital"
 * entry[=].resource = Hospital
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/DoctorHospital"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/DoctorHospital"
 * entry[=].resource = DoctorHospital
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/Hopital"
+* entry[=].resource = Hopital
 
 
 Instance: 3-5-CompHydrocortisone
@@ -66,12 +68,12 @@ Description: "Example for a medication statement (CH EMED MedicationStatement MT
 * medicationReference = Reference(MedHydrocortisone)
 * subject = Reference(MadameDupont)
 * reasonCode.text = "prurit"
-* dosage[structurednormal][+].patientInstruction = "en cas de crise de prurit"
-* dosage[structurednormal][=].timing.repeat.when[+] = #MORN
-* dosage[structurednormal][=].timing.repeat.when[+] = #EVE
-* dosage[structurednormal][=].asNeededBoolean = true
-* dosage[structurednormal][=].route = $edqm#20053000 "Oral use"
-* dosage[structurednormal][=].doseAndRate.doseQuantity = 0.5 $sct#732936001 "Tablet (unit of presentation)"
+* dosage[baseEntry][+].patientInstruction = "en cas de crise de prurit"
+* dosage[baseEntry][=].timing.repeat.when[+] = #MORN
+* dosage[baseEntry][=].timing.repeat.when[+] = #EVE
+* dosage[baseEntry][=].asNeededBoolean = true
+* dosage[baseEntry][=].route = $edqm#20053000 "Oral use"
+* dosage[baseEntry][=].doseAndRate.doseQuantity = 0.5 $sct#732936001 "Tablet (unit of presentation)"
 
 
 Instance: MedHydrocortisone
